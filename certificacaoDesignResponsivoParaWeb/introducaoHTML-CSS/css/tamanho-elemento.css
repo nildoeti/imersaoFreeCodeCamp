@@ -1,0 +1,20 @@
+.ball {
+  background: linear-gradient(
+    35deg,
+    #ccffff,
+    #ffcccc
+    );
+  border-radius: 50%;
+  height: 40px;
+  position: fixed;
+  width: 40px;
+}
+
+.ball1 {
+  left: 20%;
+}
+
+.ball2 {
+  left: 65%;
+  transform: scale(1.5)
+}

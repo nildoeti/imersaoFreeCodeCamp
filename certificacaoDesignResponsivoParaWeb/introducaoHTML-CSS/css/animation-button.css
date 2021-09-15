@@ -1,0 +1,16 @@
+button {
+  background-color: rgb(37, 57, 162);
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  padding: 5px 10px 8px 10px;
+}
+button:hover {
+  animation-duration: 500ms;
+  animation-name: background-color;
+}
+
+@keyframes background-color{
+  100% {
+    background-color: #4791d0;
+  }
+}

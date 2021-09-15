@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bloquear um elemento na janela do navegador com posicionamento fixo </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/posicao-fixa-de-um-elemento.css">
+  </head>
+  <body>
+    <div class="">
+      <h1>Posicionamento fixo de um elemento</h1>
+      <p>
+        O próximo esquema de layout que o CSS oferece é o fixedposition, que é um
+        tipo de posicionamento absoluto que bloqueia um elemento em relação à janela
+        do navegador. Semelhante ao posicionamento absoluto, é usado com as propriedades
+        de deslocamento CSS e também remove o elemento do fluxo normal do documento.
+        Outros itens não "percebem" mais onde estão posicionados, o que pode exigir
+        alguns ajustes de layout em outro lugar.
+      </p>
+      <p>
+        Uma diferença fundamental entre o fixede absoluteposições é que um elemento
+        com uma posição fixa não se moverá quando o usuário rolar.
+      </p>
+      <p>
+        A barra de navegação no código é rotulada com uma class de navbar. Mudar o seu
+        positionpara fixed, e desloque-o em 0 pixels do tope 0 pixels do left.
+        Depois de adicionar o código, role a janela de visualização para ver como
+        a navegação permanece no lugar.
+      </p>
+      <hr>
+      <header>
+        <h1>Welcome</h1>
+        <nav class="navbar">
+          <ul>
+            <li ><a href="#">Home</a></li>
+            <li ><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <p>Eu desloco para cima quando a #navbar é fixada na janela do navegador. </p>
+      </header>
+    </div>
+  </body>
+</html>

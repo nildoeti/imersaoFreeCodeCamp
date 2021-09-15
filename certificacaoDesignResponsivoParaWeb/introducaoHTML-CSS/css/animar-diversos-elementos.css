@@ -1,0 +1,43 @@
+.stars {
+  animation-iteration-count: infinite;
+  background-color: #ffffff;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+.star-1 {
+  animation-duration: 1s;
+  animation-name: twinkle-1;
+  margin-left: 60%;
+  margin-top: 15%;
+}
+.star-2 {
+  animation-duration: 1s;
+  animation-name: twinkle-2;
+  margin-left: 25%;
+  margin-top: 25%;
+}
+@keyframes twinkle-1{
+  50%{
+    opacity: 0.5;
+    transform: scale(0.5); /* escala de animação */
+  }
+}
+@keyframes twinkle-2 {
+    20%{
+      opacity: 0.5;
+      transform: scale(0.5); /* escala de animação */
+    }
+  }
+.back {
+  background: linear-gradient(
+    #070b00, #000099, #66c2ff, #ffcccc, #ffeee6
+    );
+    height: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: fixed;  
+    top: 0;
+    width: 100%;
+}

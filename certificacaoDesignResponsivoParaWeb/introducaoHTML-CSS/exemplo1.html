@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatPhotoApp</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <style>
+    .red-text {
+        color: red;
+    }
+
+    h2 {
+        font-family: Lobster, monospace;
+    }
+
+    p {
+        font-size: 16px;
+        font-family: monospace;
+    }
+
+  .thick-green-border {
+        border-color: green;
+        border-width: 10px;
+        border-style: solid;
+        border-radius: 50%;
+  }
+
+  .smaller-image {
+        width: 100px;
+  }
+
+  .silver-background {
+    background-color: silver;
+  }
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <h2 class="red-text
+            ,,3">CatPhotoApp</h2>
+            <p>Click here to view more
+                <a href="https://www.freecatphotoapp.com" targe="_blank">cat photos</a>
+            </p>
+            <img class="thick-green-border smaller-image" src="img/relaxing-cat.jpg" alt="A cute orange cat lying on its back">
+            <p>
+                Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching
+                attack your ankles chase the red dot, hairball run catnip eat the grass
+                sniff. Purr jump eat the grass rip the couch scratched sunbathe,
+                shed everywhere rip the couch sleep in the sink fluffy fur catnip
+                scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere
+                stretching attack your ankles chase the red dot, hairball run catnip
+                eat the grass sniff.
+            </p>
+            <p>
+                Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere
+                rip the couch sleep in the sink fluffy fur catnip scratched. Kitty
+                ipsum dolor sit amet, shed everywhere shed everywhere stretching
+                attack your ankles chase the red dot, hairball run catnip eat the
+                grass sniff. Purr jump eat the grass rip the couch scratched sunbathe,
+                shed everywhere rip the couch sleep in the sink fluffy fur catnip
+                scratched.
+            </p>
+            <p>
+                Meowwww loved it, hated it, loved it, hated it yet spill litter box,
+                scratch at owner, destroy all furniture, especially couch or lay on
+                arms while you're using the keyboard. Missing until dinner time toy
+                mouse squeak roll over. With tail in the air lounge in doorway. Man
+                running from cops stops to pet cats, goes to jail.
+            </p>
+            <p>
+                Intently stare at the same spot poop in the plant pot but kitten is
+                playing with dead mouse. Get video posted to internet for chasing red
+                dot leave fur on owners clothes meow to be let out and mesmerizing birds
+                leave fur on owners clothes or favor packaging over toy so purr for no reason.
+                Meow to be let out play time intently sniff hand run outside as soon as
+                door open yet destroy couch.
+            </p>
+            <div class="silver-background"> <!-- adicionar divs no entorno dos elementos uol e ol -->
+                <p>Things cats love:</p>
+                <ul>
+                    <li>cat nip</li>
+                    <li>laser pointer</li>
+                    <li>lasangna</li>
+                </ul>
+            </div>
+            <div class="silver-background">
+                <p>Top 3 things cats hate</p>
+                <ol>
+                    <li>flea treantment</li>
+                    <li>thunder</li>
+                    <li>other cats</li>
+                </ol>
+            </div>
+                <!--
+                    Aqui, você tem duas radio entradas. Quando o usuário envia o
+                    formulário com a indoor opção selecionada, os dados do formulário
+                    irá incluir a linha: indoor-outdoor=indoor. Isso vem dos atributos
+                    namee valueda entrada "interna".
+
+                    Se você omitir o valueatributo, os dados do formulário enviado
+                    usarão o valor padrão, que é on. Nesse cenário, se o usuário
+                    clicasse na opção "interna" e enviasse o formulário, os dados
+                    do formulário resultantes seriam indoor-outdoor=on, o que não
+                    é útil. Portanto, o valueatributo precisa ser definido como
+                    algo para identificar a opção.
+                -->
+            <form action="https://www.freecatphotoapp.com/submit-cat-photo">
+                <label for="indoor">
+                    Indoor
+                    <input id="indoor" value="indoor" type="radio" name="indoor-outdoor" checked>
+                </label>
+                <label for="outdoor">
+                    Outdoor
+                    <input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor">
+                </label><br>
+                <label for="loving">
+                    <input id="loving" value="loving" type="checkbox" name="personality" checked> Loving
+                </label>
+                <label for="lazy">
+                    <input id="lazy" value="lazy" type="checkbox" name="personality">Lazy
+                </label>
+                <label for="energetic">
+                    <input id="energetic" value="energetic" type="checkbox" name="personality">energetic
+                </label><br>
+                <input type="text" required placeholder="cat photo URL">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    <main>
+    <footer>Copyright Cat Photo App</footer>
+</body>
+</html>

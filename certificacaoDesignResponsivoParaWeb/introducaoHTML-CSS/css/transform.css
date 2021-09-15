@@ -1,0 +1,11 @@
+div {
+  background: linear-gradient(
+    53deg,
+    #cb53a4,
+    #42b5a4
+    );
+  height: 100px;
+  margin: 50px auto;
+  width: 70%;
+
+}

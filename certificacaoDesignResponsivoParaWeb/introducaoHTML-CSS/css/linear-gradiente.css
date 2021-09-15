@@ -1,0 +1,64 @@
+.ball {
+  background: linear-gradient(
+    35deg,
+    #e7de12,
+    #1188b4
+    );
+
+    color: black;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.ball1 {
+  lef: 20%;
+}
+
+.ball2 {
+  left: 65%;
+  margin-left: 100px;
+  transform: scale(1.5);
+}
+
+.linear1 {
+  background-image: linear-gradient(0deg, red, blue);
+  color: white;
+  height: 100px;
+  text-align: center;
+}
+
+.linear2 {
+  background-image: linear-gradient(90deg, red, blue);
+  color: white;
+  height: 100px;
+  text-align: center;
+}
+
+.linear3 {
+  background-image: linear-gradient(180deg, red, blue);
+  color: white;
+  height: 100px;
+  text-align: center;
+}
+
+.linear4 {
+  background-image: linear-gradient(90deg, red, blue);
+  color: white;
+  height: 100px;
+  text-align: center;
+}
+
+.linear5 {
+  background-image: linear-gradient(180deg, yellow, blue);
+  color: white;
+  height: 100px;
+  text-align: center;
+}
+
+.linear6 {
+  background-image: linear-gradient(0deg, yellow, black);
+  color: white;
+  height: 100px;
+  text-align: center;
+}

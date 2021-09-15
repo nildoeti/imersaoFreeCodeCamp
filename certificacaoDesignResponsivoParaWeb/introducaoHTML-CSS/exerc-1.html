@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobreescrever classes</title>
+    <style type="text/css">
+    body {
+        background-color:black;
+        font-family: monospace;
+        color: green;    
+    }
+    
+    .pink-text {
+        color: pink !important;
+    }
+    
+    .blue-text {
+        color: blue;
+    }
+
+    #orange-text {
+        color: orange;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 style="color: white;" id="orange-text" class="pink-text blue-text">
+            Hello Wolrd!
+        </h1>    
+    </div>
+</body>
+</html>

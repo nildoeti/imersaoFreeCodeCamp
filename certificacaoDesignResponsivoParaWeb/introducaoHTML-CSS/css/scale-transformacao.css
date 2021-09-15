@@ -1,0 +1,60 @@
+.one {
+  background: linear-gradient(
+    53deg,
+    #ccfffc,
+    #ffcccf
+    );
+  height: 100px;
+  margin: 50px auto;
+  width: 70%;
+}
+
+.one:hover {
+  transform: scale(1.1);
+}
+
+.two {
+  background-color: red;
+  height: 100px;
+  margin: 50px auto;
+  transform: skewX(24deg);
+  width: 70%;
+}
+
+.two:hover {
+  transform: scaleX(1.1 );
+}
+
+.three {
+  background-color: blue;
+  height: 100px;
+  margin: 50px auto;
+  transform: skewY(-10deg);
+  width: 70%;
+}
+.three:hover {
+  transform: scaleX(1.1);
+}
+
+.tar {
+  background: linear-gradient(
+    50deg,
+    rgb(198, 68, 201),
+    rgb(107, 244, 182)
+    );
+  height: 100px;
+  margin: 50px auto;
+  width: 70%;
+
+}
+
+.ter {
+  background: yellowgreen;
+  height: 100px;
+  margin: 50px auto;
+  width: 70%;
+}
+
+.ter:hover {
+  transform: scaleY(1.2)
+}

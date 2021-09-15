@@ -1,0 +1,14 @@
+.left {
+  float: left;
+  width: 50%;
+}
+
+.right {
+  float: right;
+  width: 40%;
+}
+
+aside, section {
+  background-color: rgb(217, 208, 216);
+  padding: 2px;
+}

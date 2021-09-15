@@ -1,0 +1,22 @@
+.center {
+  background-color:   transparent;
+  border-radius: 50%;
+  bottom: 0;
+  box-shadow: 25px 10px 0 0 blue;
+  height: 100px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+}
+
+.one {
+  background: rgb(135, 23, 156);
+  border-radius: 50%;
+  box-shadow: 20px 5px 5px 5px  rgb(189, 179, 190);
+  height: 100px;
+  position: relative;
+  width: 100px;
+}

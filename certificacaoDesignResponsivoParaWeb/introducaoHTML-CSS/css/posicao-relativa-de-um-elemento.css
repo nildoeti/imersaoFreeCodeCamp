@@ -1,0 +1,11 @@
+h2 {
+  left: 15px;
+  position: relative;
+  top: 10px;
+}
+
+.searchbar {
+  position: relative;
+  right: 50px;
+  top: 50px;
+}

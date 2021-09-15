@@ -1,0 +1,25 @@
+div {
+  background-color: black;
+  border-radius: 5px;
+  height: 40px;
+  margin: 50px auto;
+  width: 70%;
+}
+.react {
+  animation-duration: 4s;
+  animation-name: rainbow;
+}
+@keyframes rainbow {
+  0% {
+    background-color: blue;
+  }
+  50% {
+    background-color: green;
+  }
+  100% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: pink;
+  }
+}
