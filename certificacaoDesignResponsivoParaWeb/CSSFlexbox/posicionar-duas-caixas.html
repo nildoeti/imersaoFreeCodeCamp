@@ -5,20 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usar display: flex para posicionar duas caixas</title>
-    <style>
+    <style>            
         .box-container {
-            height: 500px;
             display: flex;
+            height: 500px;
         }
 
-        .box1 {
-            background-color: antiquewhite; 
+        .box-1 {
+            background-color: antiquewhite;
             height: 50%;
             width: 50%;
         }
 
-        .box2 {
-            background-color: chocolate;
+        .box-2 {
+            background-color: cadetblue;
             height: 50%;
             width: 50%;
         }
@@ -32,13 +32,16 @@
         explicará a teoria. Em seguida, aplicaremos o conceito aprendido em um 
         desafio prático usando um tweet simples.
     </p>
+    <p>
+        Colocando a propriedade <code>display: flex;</code> em um elemento 
+        permite que você use outras propriedades flex para construir uma página 
+        responsiva.
+    </p>
 
     <div class="box-container">
-        <div class="box1">
-            <div class="box2">
-
-            </div>
-        </div>
+        <div class="box-1"></div>
+        <div class="box-2"></div>
     </div>
+
 </body>
 </html>
