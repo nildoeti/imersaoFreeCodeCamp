@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Flex-direction para criar uma linha</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style media="screen">
+    .box-container {
+    display: flex;
+      height: 500px;
+    }
+
+    .box-1 {
+      background-color: rgb(176, 6, 185);
+      height: 50%;
+      width: 50%;
+    }
+
+    .box-2 {
+      background-color: rgb(8, 54, 15);
+      height: 50%;
+      width: 50%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Usar a propriedade flex-direction para criar uma linha</h1>
+  <p>
+    Ao adicionar <code>display: flex</code> a um elemento, você o transforma em um flex
+    container. Isso faz com que seja possível alinhar todos os filhos desse
+    elemento em linhas ou colunas. Para fazer isso, você deve usar a propriedade
+     flex-direction no item pai e definir o valor desta usando row ou column.
+     Criar uma row (linha) vai alinhar os itens filhos horizontalmente. Criar
+     uma column (coluna) vai alinhar os itens filhos verticalmente.
+  </p>
+  <p>
+    Outras opções para <i>flex-direction</i> são <i>row-reverse</i> e
+    <i>column-reverse</i>.
+  </p>
+
+  <div class="box-container">
+    <div class="box-1"></div>
+    <div class="box-2">
+      </ /div>
+    </div>
+</body>
+
+</html>
