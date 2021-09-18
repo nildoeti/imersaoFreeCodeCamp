@@ -1,31 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Usar a propriedade flex-direction para criar linhas no Tweet Embed</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style media="screen">
+        header {
+            display: flex;
+            flex-direction: row;
+        }
+
+        header .profile-thumbnail {
+            border-radius: 4px;
+            height: 50px;
+            height: 50px;
+        }
+
+        header .profile-name {
+            display: flex;
+            margin-left: 10px;
+        }
+
+        header .follow-btn {
+            display: flex;
+            margin: 0 0 0 auto;
+        }
+
+        header .follow-btn .button {
+            border: 0;
+            border-radius: 3px;
+            padding: 5px;
+        }
+
+        header h3, header h4 {
+            display: flex;
+            margin: 0;
+        }
+
+        .inner p {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .inner hr {
+            border-style: solid;
+            margin: 20px 0;
+            opacity: 0.1;
+        }
+
+        footer .stats {
+            display: flex;
+            font-size: 15px;
+        }
+
+        footer .stats strong {
+            font-size: 18px;
+        }
+
+        footer .stats .likes {
+            margin-left: 10px;
+        }
+
+        footer .cta {
+            margin-left: auto;
+        }
+
+        footer .cta button {
+            border: 0;
+            background: transparent;
+        }
+
 
     </style>
-  </head>
-  <body>
-      <div class="w3-container">
-          <main>
-              <h1>Flex-direction</h1>
-              <p>Usar a propriedade <code>flex-direction</code> para criar linhas no Tweet Embed</p>
+</head>
 
-              <article class="">
-                  <h2>Flex Direction</h2>
-                  <p>
-                      Os elementos header e footer no exemplo do <i>tweet</i> possuem
-                      itens filhos que podem ser posicionados em linhas usando a
-                      propriedade <code>flex-direction</code>. Você vai usar essa
-                      propriedade para dizer ao <em>CSS</em> para alinhar os
-                      <i>flex items</i> horizontalmente.
-                  </p>
-              </article>
-          </main>
-      </div>
-    </body>
+<body>
+    <header>
+        <img src="./img/quincy-twitter-photo.jpg" alt="Foto de perfil de Quincy Larson" class="profile-thumbnail"/>
+        <div class="profile-name">
+            <h3>Quincy Larson</h3>
+            <h4>@oassia</h4>
+        </div>
+
+        <div class="follow-btn">
+            <button>Follow</button>
+        </div>
+    </header>
+
+    <div class="inner">
+        <p>
+            Conheço muitas pessoas que estão em busca daquele truque que as
+            ajudará a trabalhar de maneira inteligente. Mesmo se você trabalhar
+            de forma inteligente, ainda terá que trabalhar muito.
+        </p>
+        <span>1:32 PM - 12 Jan 2021</span>
+        <hr>
+    </div>
+
+    <footer>
+        <div class="stats">
+            <div class="Retwests">
+                <strong>107</strong> Retwests
+            </div>
+            <div class="likes">
+                <strong>431</strong> Likes
+            </div>
+        </div>
+        <div class="cta">
+            <button class="share-btn">Share</button>
+            <button class="retweet-btn">Retwest</button>
+            <button class="like-btn">Like</button>
+        </div>
+    </footer>
+</body>
+
 </html>
