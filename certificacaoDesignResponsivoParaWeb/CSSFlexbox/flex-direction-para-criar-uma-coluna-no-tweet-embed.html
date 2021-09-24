@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usar a propriedade flex-direction para criar uma coluna no Tweet Embed</title>
+    <style media="screen">
+        body {
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        header, footer {
+            display: flex;
+            flex-direction: row;
+        }
+
+        header .profile-thumbnail {
+            height: 50px;
+            width: 50px;
+            border: 4px;
+        }
+
+        header .profile-name {
+            display: flex;
+            margin-left: 10px;
+        }
+
+        header .follow-btn {
+            display: flex;
+            margin: 0 0 0 auto;
+        }
+
+        header .follow-btn button {
+            border: 0px;
+            border-radius: 3px;
+            padding: 5px;
+        }
+
+        header h3, header h4 {
+            display: flex;
+            margin: 0;
+        }
+
+        .inner p {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .inner hr {
+            margin: 20px 0;
+            border-style: solid;
+            opacity: 0.1;
+        }
+
+        footer .stats {
+            display: flex;
+            font-size: 15px;
+        }
+
+        footer .stats strong {
+            font-size: 18px;
+        }
+
+        footer .stats likes {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body class="w3-container">
+    <!-- CAbecaljo-->
+    <header>
+        <img src="img/quincy-twitter-photo.jpg" alt="Quincy Larson's profile picture" class="profile-thumbnail">
+
+        <div class="profile-name">
+            <h3>Quincy Larson</h3>
+            <h4>@oassia</h4>
+        </div>
+
+        <div class="follow-btn">
+            <button type="button" name="button">Follow</button>
+        </div>
+    </header>
+
+    <!-- Cometário -->
+    <div class="inner">
+        <p>
+            Conheço tantas pessoas que estão em busca daquele truque que as
+            ajudará a trabalhar de maneira inteligente. Mesmo se você
+            trabalhar de forma inteligente, ainda terá que trabalhar muito.
+        </p>
+        <span class="date">1:32 PM - 12 Jan 2018</span>
+        <hr>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+
+        <div class="stats">
+
+            <div class="retweets">
+                <strong>107</strong> Retweets
+            </div>
+
+            <div class="likes">
+                <strong>431</strong> Likes
+            </div>
+        </div>
+
+        <div class="cta">
+            <button type="button" name="button" class="share-btn">Share</button>
+            <button type="button" name="button" class="like-btn">Like</button>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
