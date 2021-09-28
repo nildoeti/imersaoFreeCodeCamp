@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Usar a propriedade align-items no Tweet Embed</title>
+        <style media="screen">
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            header, footer {
+                display: flex;
+                flex-direction: row;
+            }
+
+            header .profile-thumbnail {
+                border-radius: 4px;
+                height: 50px;
+                width: 50px;
+            }
+
+            header .profile-name {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 10px;
+            }
+
+            header .follow-btn {
+                align-items: center;
+                display: flex;
+                margin: 0 0 0 auto;
+            }
+
+            header .follow-btn button {
+                border: 0;
+                border-radius: 3px;
+                padding: 5px;
+            }
+
+            header h3, header h4 {
+                display: flex;
+                margin: 0;
+            }
+
+            .inner p {
+                font-size: 20px;
+                margin-button: 10px;
+            }
+
+            .inner hr {
+                margin: 20px 0;
+                border-style: solid;
+                opacity: 0.1;
+            }
+
+            footer .stats {
+                display: flex;
+                font-size: 15px;
+            }
+
+            footer .stats strong {
+                font-size: 18px;
+            }
+
+            footer .stats .likes {
+                margin-left: 10px;
+            }
+
+            footer .cta {
+                margin-left: 10px;
+            }
+
+            footer .cta button {
+                border: 0;
+                background: transparent;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="img/quincy-twitter-photo.jpg" alt="Quincy Larson's profile picture" class="profile-thumbnail">
+            <div class="profile-name">
+                <h3>Quincy Larson</h3>
+                <h4>@ossia</h4>
+            </div>
+            <div class="follow-btn">
+                <button type="button" name="button">Follow</button>
+            </div>
+        </header>
+        <div class="inner">
+            <p>
+                Conheço muitas pessoas que estão em busca daquele truque que as
+                ajudará a trabalhar de maneira inteligente. Mesmo se você trabalhar
+                de forma inteligente, ainda terá que trabalhar muito.
+            </p>
+            <spam class="date">1:32 PM - 12 Jan 2018</spam>
+            <hr>
+        </div>
+        <footer>
+            <div class="stats">
+                <div class="retweets">
+                    <strong>107</strong> Retweets
+                </div>
+                <div class="likes">
+                    <strong>431</strong> Likes
+                </div>
+                <div class="cta">
+                    <button type="button" name="button" class="share-btn">Share</button>
+                    <button type="button" name="button" class="retweet-btn">Retweet</button>
+                    <button type="button" name="button" class="like-btn">Like</button>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
