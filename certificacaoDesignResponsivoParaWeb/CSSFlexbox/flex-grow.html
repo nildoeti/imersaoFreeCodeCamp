@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Usar a propriedade flex-grow para expandir flex items</title>
+        <style media="screen">
+            .box-container {
+                display: flex;
+                height: 500px;
+            }
+
+            .box-1 {
+                background-color: #934dc9;
+                flex-grow: 1;
+                height: 200px;
+            }
+
+            .box-2 {
+                background-color: #f9f735;
+                flex-grow: 2;
+                height: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <h1>Flex-grow para expandir flex items</h1>
+            <p>
+                O oposto de flex-shrink é a propriedade flex-grow. Lembre-se de que
+                flex-shrink controla o tamanho dos itens quando o contêiner encolhe.
+                A propriedade flex-grow controla o tamanho dos itens quando o
+                contêiner pai expande.
+            </p>
+
+            <div class="box-container">
+                <div class="box-1"></div>
+                <div class="box-2"></div>
+            </div>
+        </section>
+
+
+    </body>
+</html>
