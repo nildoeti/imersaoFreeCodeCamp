@@ -1,0 +1,16 @@
+.box-container {
+    display: flex;
+    height: 500px;
+}
+
+.box-1 {
+    background-color: #c27377;
+    flex-basis: 10em;
+    height: 200px;
+}
+
+.box-2 {
+    background-color: #56a36d;
+    flex-basis: 20em;
+    height: 200px;
+}
