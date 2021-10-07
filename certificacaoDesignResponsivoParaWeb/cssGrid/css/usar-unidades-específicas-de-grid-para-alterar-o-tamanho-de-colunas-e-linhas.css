@@ -1,0 +1,27 @@
+.container {
+    background-color: #fafafa;
+    display: grid;
+    font-size: 40px;
+    grid-template-columns: 1fr 100px 2fr;
+    width: 100%;
+}
+
+.d1 {
+    background: #b3bf94;
+}
+
+.d2 {
+    background: #96b2d0;
+}
+
+.d3 {
+    background: #af91c9;
+}
+
+.d4 {
+    background: #d5d925;
+}
+
+.d5 {
+    background: #9fddcf;
+}
