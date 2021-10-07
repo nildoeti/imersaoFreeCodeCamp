@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./css/criar-colunas-com-grid-template-columns.css">
+    <title>Criar colunas com grid-template-columns</title>
+</head>
+
+<body>
+    <section class="w3-container">
+        <h1>Criar colunas com grid-template-columns</h1>
+
+        <p>
+            Só criar um elemento <em>grid</em> não faz muita coisa. Você também
+            precisa definir a estrutura do <em>grid</em>. Para adicionar colunas ao
+            <em>grid</em>, use a propriedade <code>grid-template-columns</code> em
+            um <em>grid container</em>, como demonstrado abaixo:
+        </p>
+        <div>
+
+            <div class="w3-code cssHigh notranslate">
+                .container {<br />
+                display: grid;<br />
+                grid-template-columns: 50px 50px;<br />
+                }
+
+            </div>
+
+            <p>
+                Isso vai dar ao <strong>grid</strong> duas colunas, cada uma com
+                50px de largura. O número dos parâmetros dados à propriedade
+                <code>grid-template-columns</code> indica o número de <em>colunas</em>
+                no <em>grid</em>. O valor de cada parâmetro indica a largura de
+                cada coluna.
+            </p>
+        </div>
+
+        <div class="container">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+        </div>
+
+
+    </section>
+    <!-- w3codecolor.js -->
+    <script src="https://www.w3schools.com/lib/w3codecolor.js"></script>
+</body>
+
+</html>
