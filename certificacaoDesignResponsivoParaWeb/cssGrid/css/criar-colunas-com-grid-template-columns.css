@@ -2,7 +2,7 @@
     background-color: lightgray;
     display: grid;
     font-size: 40px;
-    grid-template-columns: 100px 100px 100px0;
+    grid-template-columns: 100px 100px 100px;
     width: 100%;
 }
 
