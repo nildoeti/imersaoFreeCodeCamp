@@ -1,0 +1,26 @@
+.container {
+    background-color: lightgray;
+    display: grid;
+    font-size: 40px;
+    grid-template-columns: 100px 100px 100px;
+    width: 100%;
+}
+
+.d1 {
+    background-color: #eb17a4;
+}
+
+.d2 {
+    background-color: #270ddd;
+}
+.d3 {
+    background-color: #d777d3;
+}
+
+.d4 {
+    background-color: #5fc6a1;
+}
+
+.d5 {
+    background-color: #d5c321;
+}
