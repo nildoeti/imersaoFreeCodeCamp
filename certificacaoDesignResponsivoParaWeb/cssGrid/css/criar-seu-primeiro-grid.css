@@ -1,0 +1,29 @@
+span {
+    text-decoration: underline;
+}
+
+.container {
+    background-color: lightgray;
+    display: grid;
+    font-size: 40px;
+    width: 100%;
+}
+
+.d1 {
+    background-color: lightskyblue;
+}
+
+.d2 {
+    background-color: lightsalmon;
+}
+
+.d3 {
+    background-color: paleturquoise;
+}
+
+.d4 {
+    background-color: lightpink;
+}
+.d5 {
+    background-color: palegreen;
+}
