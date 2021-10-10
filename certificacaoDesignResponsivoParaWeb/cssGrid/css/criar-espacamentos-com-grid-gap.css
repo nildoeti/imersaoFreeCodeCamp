@@ -1,0 +1,30 @@
+.container {
+    background-color: #f7f7f7;
+    display: grid;
+    font-size: 40px;
+    grid-template-columns: 1fr 1fr 40px;
+    grid-template-rows: auto;
+    grid-gap: 10px 20px;
+    min-width: 300px;
+    width: 100%;
+}
+
+.d1 {
+    background-color: #b27ebf;
+}
+
+.d2 {
+    background-color: #6deca3;
+}
+
+.d3 {
+    background-color: #e6b676;
+}
+
+.d4 {
+    background-color: #4db4e3;
+}
+
+.d5 {
+    background-color: #fc2346;
+}
