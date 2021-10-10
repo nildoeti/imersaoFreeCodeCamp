@@ -1,0 +1,35 @@
+.container {
+    background-color: #f7f3f1;
+    font-size: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    min-width: 300px;
+    width: 100%;
+}
+
+.d1 {
+    background-color: #feab71;
+}
+
+.d2 {
+    background-color: #5a9528;
+}
+
+.d3 {
+    background-color: #baeafb;
+}
+
+.d4 {
+    background-color: #de6feb;
+}
+
+.d5 {
+    background-color: #0185f6;
+    grid-column: 2/4;
+    grid-row: 2/4;
+}
+
+body {
+    width: 100%;
+}
