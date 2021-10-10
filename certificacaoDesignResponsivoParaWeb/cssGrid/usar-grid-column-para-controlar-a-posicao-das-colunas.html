@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/usar-grid-column-para-controlar-a-posicao-das-colunas.css">
+    <title>Usar grid-column para controlar a posição das colunas</title>
+</head>
+<body>
+    <h1>Controlar a posição das colunas com <code>grid-colmn</code></h1>
+
+    <p>
+        Até este ponto, todas as propriedades que foram discutidas são destinadas
+        para o grid container. A propriedade <code>grid-column</code> é usada nos
+        <em>grid items</em>.
+    </p>
+
+    <p>
+        As linhas horizontais e verticais que criam o grid são chamadas de linhas
+        (lines). Essas linhas são numeradas começando com 1 no canto superior
+        esquerdo do grid e movem para a direita para colunas e para baixo para
+        linhas.
+    </p>
+
+    <p>
+        Para controlar a quantidade de colunas que um item ocupará, você pode
+        usar a propriedade grid-column definindo o número da linha em que deseja
+        que o item comece e pare.
+    </p>
+
+    <p class="code-btn">
+        <code>grid-column: 1 / 3;
+    </code>
+    </p>
+
+    <p>
+        Isso fará com que o item comece na primeira linha vertical o grid à
+        esquerda e se estenda até a 3ª linha do grid, ocupando duas colunas.
+    </p>
+
+    <div class="container">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+        <div class="d4">4</div>
+        <div class="d5">5</div>
+    </div>
+</body>
+</html>
