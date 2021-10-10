@@ -1,0 +1,31 @@
+.container {
+	background-color: lightgrey;
+	display: grid;
+	font-size: 40px;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-column-gap: 5px;
+	grid-row-gap: 5px;
+	min-width: 300px;
+	width: 100%;
+}
+
+.d1 {
+	background-color: lightskyblue;
+}
+
+.d2 {
+	background-color: lightsalmon;
+}
+
+.d3 {
+	background-color: paleturquoise;
+}
+
+.d4 {
+	background-color: lightpink;
+}
+
+.d5 {
+	background-color: palegreen;
+}
