@@ -1,0 +1,38 @@
+.container {
+    background-color: #f1f0f1;
+    display: grid;
+    font-size: 40px;
+    grid-gap: 10px 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    min-width: 300px;
+    width: 100%;
+}
+
+.d1 {
+    background-color: #e79a7b;
+}
+
+.d2 {
+    background-color: #f4d597;
+}
+
+.d3 {
+    background-color: #e478cb;
+}
+
+.d4 {
+    background-color: #a388db;
+}
+.d5 {
+    background-color: #b8c427;
+    grid-column: 2;
+    grid-column-end: 4;
+}
+
+.code-btn {
+    border-left: 4px solid blue;
+    font-size: 18px;
+    line-height: 50px;
+    padding-left: 20px;
+}
