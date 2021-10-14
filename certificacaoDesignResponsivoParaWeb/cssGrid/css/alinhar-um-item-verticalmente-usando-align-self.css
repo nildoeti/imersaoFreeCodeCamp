@@ -1,0 +1,31 @@
+.container {
+  background-color: #f4eff0;
+  display: grid;
+  font-size: 40px;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  min-height: 300px;
+  width: 100%;
+}
+
+.item1 {
+  background-color: #f6e124;
+}
+
+.item2 {
+  background-color: #26c43e;
+}
+
+.item3 {
+  align-self: flex-end;
+  background-color: #f29212;
+}
+
+.item4 {
+  background-color: #8aebe2;
+}
+
+.item5 {
+  background-color: #ee7ba4;
+}
