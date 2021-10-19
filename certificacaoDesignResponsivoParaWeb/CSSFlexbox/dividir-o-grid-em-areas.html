@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/dividir-o-grid-em-areas.css">
+    <title>Dividir o grid em áreas</title>
+</head>
+<body>
+    <h1>Dividir o grid em áreas</h1>
+    <p>
+        Você pode agrupar as células do <strong>grid</strong> em uma área e dar
+        a esta um nome personalizado. Faça isso usando a propriedade
+        <em>grid-template-areas</em> no <em>grid container</em>:
+    </p>
+    <div>
+        <code class="nld-code">.grid-template-areas:</code><br>
+        <code class="nld-code-1">header header header"</code><br>
+        <code class="nld-code-1">"advert content content"</code><br>
+        <code class="nld-code-1">"advert footer footer";</code><br>
+    </div>
+
+    <p>
+        O código acima agrupa as células da grade em quatro áreas: <code class="nld-code">header</code>,
+        <code class="nld-code">advert</code>, <code class="nld-code">content</code>
+        e <code class="nld-code">footer</code>.
+    </p>
+    <p>
+        Cada palavra representa uma célula e cada par de citações representa uma linha.
+    </p>
+    <br>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+</body>
+</html>
