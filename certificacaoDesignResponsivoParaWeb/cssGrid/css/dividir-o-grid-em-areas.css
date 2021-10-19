@@ -1,0 +1,28 @@
+.container {
+  background-color: #f4eff6;
+  display: grid;
+  font-size: 20px;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  min-height: 300px;
+  grid-template-areas:
+  "header header header"
+  "advert content content"
+  "footer footer footer";
+  width: 100%;
+}
+
+.item1 {background-color: #a8d274;}
+.item2 {background-color: #6c75bf;}
+.item3 {background-color: #d7a66f;}
+.item4 {background-color: #d48dd1;}
+.item5 {background-color: #e6df49;}
+
+.nld-code {
+  color: red;
+}
+
+.nld-code-1 {
+  margin-left: 50px;
+}
