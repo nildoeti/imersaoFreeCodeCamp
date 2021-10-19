@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/definir-a-posicaodos-itens-usando-a-propriedade-grid-area.css">
+    <title>Definir a posição dos itens usando a propriedade grid-area</title>
+</head>
+<body>
+    <h1>Definir a posição dos itens usando a propriedade grid-area</h1>
+
+    <p>
+        Depois de criar um modelo de área para o seu grid container, como
+        mostrado no desafio anterior, você pode definir a posição de um item em
+        uma área referenciando o nome que você deu a ele. Para fazer isso, você
+        deve usar a propriedade <code>grid-area</code> em um item:
+    </p>
+    <div class="code-nld">
+        <div class="code-color">
+            .item1 {<br>
+            <code>grid-area: header;</code><br>
+    }
+        </div>
+    </div>
+
+    <p>
+        Isso informa ao grid que você deseja que a classe item1 vá para a área
+        chamada header. Nesse caso, o item usará toda a linha superior porque
+        essa linha inteira foi nomeada como a área do cabeçalho (header).
+    </p>
+
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+</body>
+</html>
