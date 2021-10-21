@@ -1,0 +1,22 @@
+.code-nld {
+  background: #fbf2f5;
+  border-left: 5px solid red;
+  padding: 10px;
+}
+
+.container {
+  background-color: #faebf4;
+  display: grid;
+  font-size: 20px;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  min-height: 100px;
+  width: 100%;
+}
+
+.item1 {background: #93d580;}
+.item2 {background: #977add;}
+.item3 {background: #e6dba5;}
+.item4 {background: #f0be9b;}
+.item5 {background: #e85cb0;}
