@@ -1,0 +1,19 @@
+.container {
+  background-color: #e9eee6;
+  font-size: 40px;
+  grid-gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  min-width: 300px;
+  width: 100%;
+}
+
+.item1 {background-color: #a1e789;}
+.item2 {background-color: #d26678;}
+.item3 {background-color: #89d9d9;}
+.item4 {background-color: #dbcb3a;}
+.item5 {
+  background-color: #627bad;
+  grid-area: 3/1/4/4;
+}
