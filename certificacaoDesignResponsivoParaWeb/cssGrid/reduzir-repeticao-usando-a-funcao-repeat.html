@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reduzir-repeticao-usando-a-funcao-repeat.css">
+    <title>Reduzir repetição usando a função repeat</title>
+</head>
+<body>
+    <h1>Reduzir repetição usando a função repeat</h1>
+
+    <section>
+        <p>
+            Ao usar <code>grid-template-columns</code> e <code>grid-template-rows</code>
+            para definir a estrutura de um <strong>grid</strong>, você inseriu
+            um valor para cada linha ou coluna criada.
+        </p>
+        <p>
+            Digamos que você queira um <strong>grid</strong> com 100 linhas da
+            mesma altura. Não é muito prático inserir 100 valores manualmente.
+            Felizmente, existe uma maneira melhor - usando a função
+            <strong>repeat</strong> para especificar o número de vezes que você
+            deseja que sua coluna ou linha seja repetida, seguida por uma vírgula
+            e o valor que deseja repetir.
+        </p>
+        <p>
+            Um exemplo que criaria um grid de 100 linhas, cada linha com 50px de altura:
+        </p>
+
+        <div class="code-nld">
+            <code>grid-template-rows: repeat(100, 50);</code>
+        </div>
+
+        <p>
+            Você também pode repetir vários valores com a função <strong>repeat</strong>
+            e inserir a função entre outros valores ao definir a estrutura de um
+            <strong>grid</strong>. Exemplo:
+        </p>
+
+        <div class="code-nld">
+            <code>grid-template-colmns: repeat(2, 1fr 50px)</code>
+        </div>
+
+        <p>Também pode ser lido assim:</p>
+
+
+        <div class="code-nld">
+            <code>grid-template-columns: 1fr 50px 1fr 50px 20px;</code>
+        </div>
+
+        <p>
+            <strong>Observação:</strong> os valalores <code>1fr 50px</code> são
+            repetidos duas vezesseguidos de 20px.
+        </p>
+
+        <p>
+            Use a função <strong>repeat</strong> para remover a repetição de
+            valores na propriedade <code>grid-template-columns</code>.
+        </p>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="item1">1</div>
+            <div class="item2">2</div>
+            <div class="item3">3</div>
+            <div class="item4">4</div>
+            <div class="item5">5</div>
+        </div>
+    </section>
+</body>
+</html>
