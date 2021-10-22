@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./css/criar-layouts-flexiveis-usando-auto-fit.css">
+	<title>Document</title>
+</head>
+<body>
+	<section>
+		<h1></h1>
+
+		<p>
+			<code>auto-fit</code> funciona quase de forma idêntica ao <code>auto-fill</code>.
+			A única diferença é que, quando o tamanho do <em>grid container</em>
+			for maior que a soma da largura de todos os <code>grid items</code>,
+			o <code>auto-fill</code> continua inserindo linhas ou colunas vazias
+			e empurra os <em>grid items</em> para o lado, enquanto o
+			<code>auto-fit</code> estica os grid items para caber no tamanho do
+			grid container.
+		</p>
+
+		<p>
+			<strong>Observação</strong>: se não for possível ajustar todos os
+			itens em uma linha, eles serão movidos para uma nova linha.
+		</p>
+
+		<p>
+			No segundo <strong>grid</strong>, use <code>auto-fit</code> com
+			repeat para preencher o grid com colunas que tenham uma largura
+			mínima de 60px e máxima de 1fr. Em seguida, redimensione a janela do
+			navegador para ver o auto-fit em ação.
+		</p>
+
+		<div class="container">
+			<div class="item1">1</div>
+			<div class="item2">2</div>
+			<div class="item3">3</div>
+			<div class="item4">4</div>
+			<div class="item5">5</div>
+		</div>
+
+		<div class="container2">
+			<div class="item1">1</div>
+			<div class="item2">2</div>
+			<div class="item3">3</div>
+			<div class="item4">4</div>
+			<div class="item5">5</div>
+		</div>
+	</section>
+</body>
+</html>
