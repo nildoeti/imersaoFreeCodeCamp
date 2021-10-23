@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./css/criar-grids-dentro-de-grids.css">
+	<title>Criar grids dentro de grids</title>
+</head>
+<body>
+	<section>
+		<h1>Criar grids dentro de grids</h1>
+
+		<p>
+			Transformar um elemento em um <em>grid</em> afeta apenas o
+			comportamento de seus elementos filhos diretos. Portanto, ao
+			transformar um elemento filho em um grid, você tem um grid dentro de
+			um grid.
+		</p>
+
+		<p>
+			Por exemplo, ao definir as propriedades display e
+			<code>grid-template-columns</code> do elemento com a classe
+			<em>item3</em>, você cria um grid dentro de um grid.
+		</p>
+
+		<p>
+			Transforme o elemento com a classe <em>item3</em> em um <em>grid</em>
+			de duas colunas com uma largura de auto e <em>1fr</em> usando as
+			propriedades <em>display</em> e <code>grid-template-columns</code>.
+		</p>
+
+
+		<div class="container">
+			<div class="item1">header</div>
+			<div class="item2">advert</div>
+			<div class="item3">
+				<div class="itemOne">paragraph1</div>
+				<div class="itemTwo">paragraph2</div>
+			</div>
+			<div class="item4">footer</div>
+			<div class="item"></div>
+		</div>
+	</section>
+</body>
+</html>
