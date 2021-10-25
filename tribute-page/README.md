@@ -27,3 +27,7 @@ Você pode usar HTML, JavaScript e CSS para completar este projeto. É recomenda
 Você pode fazer o seu projeto [usando este modelo da CodePen](https://www.freecodecamp.org/portuguese/learn/responsive-web-design)e, logo após, clicar em Save para criar seu próprio projeto. Como alternativa, use este link da nossa CDN para executar os testes em qualquer ambiente que você preferir: https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js.
 
 Quando tiver terminado, envie o URL do seu projeto depois de ele haver passado em todos os testes.
+
+**Captura** de tela do projeto pronto.
+
+![tributepage](https://github.com/nildoeti/imersaoFreeCodeCamp/blob/main/tribute-page/img/tributepage.jpg)
