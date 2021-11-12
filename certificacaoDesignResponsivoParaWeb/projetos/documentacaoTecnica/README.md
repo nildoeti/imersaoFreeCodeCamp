@@ -27,7 +27,10 @@ deve ser um elemento de cabeçalho (header) que contém o texto que descreve o
 tópico desta seção.
 
 ***Especificação de usuário nº 4***: cada section com a classe main-section 
-também deve ter um id que corresponda ao texto de cada header contido dentro dela. Os espaços existentes devem ser substituídos por sublinhados (por exemplo, a section que contém o cabeçalho "JavaScript e Java" deve ter um id="JavaScript_and_Java").
+também deve ter um id que corresponda ao texto de cada header contido dentro 
+dela. Os espaços existentes devem ser substituídos por sublinhados (por exemplo, 
+a section que contém o cabeçalho "JavaScript e Java" deve ter um 
+id="JavaScript_and_Java").
 
 ***Especificação de usuário nº 5***: os elementos .main-section devem conter, 
 juntos, pelo menos 10 elementos p no total (não 10 para cada elemento).
@@ -59,7 +62,9 @@ deve ter um elemento que contém o texto "Olá mundo").
 
 ***Especificação de usuário nº 13***: quando um elemento da barra de navegação 
 for clicado, a página deve navegar para a seção correspondente ao elemento 
-main-doc (exemplo: se eu clicar em um elemento nav-link que contém o texto "Olá mundo", a página deve navegar para o elemento section que tem esse id e contém o header correspondente.
+main-doc (exemplo: se eu clicar em um elemento nav-link que contém o texto 
+"Olá mundo", a página deve navegar para o elemento section que tem esse id e 
+contém o header correspondente.
 
 ***Especificação de usuário nº 14***: em dispositivos com tamanho regular 
 (laptops, desktops), o elemento com id="navbar" deve ser mostrado no lado 
