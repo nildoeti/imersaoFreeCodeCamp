@@ -1,0 +1,125 @@
+body {
+    background-color: #fff;
+    color: #4d4e53;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;
+}
+
+#navbar {
+    background-color: rgb(244, 247, 246);
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+    height: 100%;
+    left: 0;
+    min-width: 290px;
+    position: fixed;
+    width: 300px;
+}
+
+header {
+    color: #000000;
+    font-size: 1.5em;
+    font-weight: lighter;
+    margin: 10px;
+    text-align: center;
+}
+
+#main-doc header {
+    margin: 0;
+    text-align: left;
+}
+
+#navbar ul {
+    height: 88%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0;
+}
+
+#navbar li {
+    border-top: 1px solid;
+    color: #4d4e53;
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+
+#navbar a {
+    color: #4d4e53;
+    cursor: pointer;
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+#main-doc {
+    margin-bottom: 110px;
+    margin-left: 310px;
+    padding: 20px;
+    position: absolute;
+}
+
+section article {
+    color: #4d4e53;
+    font-size: 0.96em;
+    margin: 15px;
+}
+
+section li {
+    margin: 15px 0 0 20px;
+}
+
+code {
+    background-color: #f7f7f7;
+    border-left: 5px solid rgb(130, 113, 111);
+    border-radius: 5px;
+    display: block;
+    line-height: 2;
+    margin: 10px;
+    padding: 15px;
+    position: relative;
+    align-items: center;
+    text-align: left;
+    white-space: pre-line;
+    word-break: normal;
+    word-wrap: normal;
+}
+
+@media only screen and (max-width: 815px) {
+    /* for mobile phone */
+    #navbar ul {
+        border: 1px solid;
+        height: 207px;
+    }
+
+    #navbar {
+        background-color: white;
+        border: none;
+        border-bottom: 2px solid;
+        margin: 0;
+        max-height: 275px;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    #main-doc {
+        position: relative;
+        margin-left: 0;
+        margin-top: 270px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #main-doc {
+        margin-left: 10px;
+    }
+
+    code {
+        margin-left: 20px;
+        min-width: 233px;
+        padding: 15px;
+    }
+}
