@@ -37,5 +37,5 @@ var camper = 'James';
 var camper = 'David';
 console.log(camper); // David
 
-let cor = 'azul';
-let cor, azul; // sybtaxError pois a variável já foi declarada.
+// let cor = 'azul';
+// let cor, azul; // sybtaxError pois a variável já foi declarada.
