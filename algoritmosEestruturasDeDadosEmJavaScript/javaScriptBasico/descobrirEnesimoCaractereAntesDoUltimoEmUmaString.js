@@ -18,6 +18,6 @@
 */
 
 const lastName = 'Lovelace';
-const secondToLastLetterOfLastName = lastName[lastName.length -3];
+const secondToLastLetterOfLastName = lastName[lastName.length -2];
 
 console.log(secondToLastLetterOfLastName);
