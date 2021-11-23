@@ -22,8 +22,16 @@
 	removido para uma nova variável, removedFromMyArray.
 */
 
+// exemplo 1
 const threeArr = [1, 4, 6];
 const oneDown = threeArr.pop();
 
 console.log(threeArr); // [ 1, 4 ]
 console.log(oneDown); // 6
+
+// exemplo 2
+const myArray = [['John', 23], ['cat', 2]]
+console.log(`Antes: ${myArray}`);
+
+const removedFromMyArray = myArray.pop();
+console.log(`Depois: ${removedFromMyArray}`);
