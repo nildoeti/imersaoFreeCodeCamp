@@ -39,4 +39,4 @@ console.log(`Antes => ${myArray}`);
 myArray.unshift(['Paul', 35]);
 console.log(`Depois =>${myArray}`);
 
-console.log('\n')
+console.log('\n');
