@@ -36,4 +36,4 @@ function reusableFunction() {
 	console.log('Hi World');
 }
 
-reusableFunction()
+reusableFunction(); // chamada da função
