@@ -34,13 +34,24 @@ console.log(a, '3 => ', typeof(3)); // number
 console.log(b, '"3" => ', typeof('3')); // string
 
 // exemplo 2
-function compareEquality(a, b) {
+// function compareEquality(a, b) {
+// 	if (a === b) {
+// 		return 'Equal';
+// 	}
+
+// 	return 'Not equal';
+// }
+
+// const result = compareEquality(2, '2'); // Not equal
+// console.log(result);
+
+// exemplo 3
+const compareEquality = (a, b) => {
 	if (a === b) {
 		return 'Equal';
 	}
-
-	return 'Not equal';
+	return 'Not Equal';
 }
 
-const result = compareEquality(2, '2'); // Not equal
+const result = compareEquality(3, '3');
 console.log(result);
