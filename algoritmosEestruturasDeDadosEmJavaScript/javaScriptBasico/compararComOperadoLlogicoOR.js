@@ -27,18 +27,29 @@
 */
 
 // padrão para if do OR
-num = 0;
-if (num > 10) {
-	return 'No';
-}
-if (num < 5) {
-	return 'No'
-}
-return 'Yes';
+// num = 0;
+// if (num > 10) {
+// 	return 'No';
+// }
+// if (num < 5) {
+// 	return 'No'
+// }
+// return 'Yes';
 
 // padrão par OR
-if (num > 10 || num < 5) {
-	return 'No';
-}
-return 'Yes';
+// if (num > 10 || num < 5) {
+// 	return 'No';
+// }
+// return 'Yes';
 
+
+// Com uso de função
+function testLogicalOr(val) {
+	if (val < 10 || val > 20) {
+		return 'Outside';
+	}
+	return 'Inside';
+}
+
+const result = testLogicalOr(15);
+console.log(result);
