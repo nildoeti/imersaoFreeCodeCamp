@@ -70,4 +70,3 @@ function bar(x) {
 
 const result2 = bar(0);
 console.log(result2); // Less than two
-
