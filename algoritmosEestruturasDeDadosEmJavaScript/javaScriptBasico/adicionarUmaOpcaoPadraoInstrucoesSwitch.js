@@ -31,8 +31,32 @@
 */
 
 // exemplo 1
-function switchOfStuff(val) {
-	// body...
+// function switchOfStuff(val) {
+// 	// body...
+// 	let answer = '';
+
+// 	switch(val) {
+// 		case 'a':
+// 			return answer = 'apple';
+// 			break;
+// 		case 'b':
+// 			return answer = 'bird';
+// 			break;
+// 		case 'c':
+// 			return answer = 'cat';
+// 			break;
+// 		default:
+// 			return 'stuff';
+// 	}
+// 	return answer;
+
+// }
+
+// const result = switchOfStuff('a');
+// console.log(result);
+
+// exemplo 2
+const switchOfStuff = (val) => {
 	let answer = '';
 
 	switch(val) {
@@ -48,9 +72,9 @@ function switchOfStuff(val) {
 		default:
 			return 'stuff';
 	}
-	return answer;
 
+	return answer;
 }
 
-const result = switchOfStuff('a');
+const result = switchOfStuff('b');
 console.log(result);
