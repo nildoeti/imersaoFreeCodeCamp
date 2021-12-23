@@ -22,25 +22,49 @@
 	break for omitido, a próxima instrução case será executada.
 */
 
-function caseInSwitch(val) {
-	// body...
-	// let answer = '';
+// function caseInSwitch(val) {
+// 	// body...
+// 	// let answer = '';
+
+// 	switch (val) {
+// 		case 1:
+// 			return 'alpha';
+// 			break;
+// 		case 2:
+// 			return 'beta';
+// 			break;
+// 		case 3:
+// 			return 'gamma';
+// 			break;
+// 		case 4:
+// 			return 'delta';
+// 			break;
+// 	}
+
+// 	return answer;
+// }
+
+// const result = caseInSwitch(1);
+// console.log(result);
+
+// exemplo 2
+const caseInSwitch = (val) => {
+	let answer = '';
 
 	switch (val) {
 		case 1:
-			return 'alpha';
+			answer = 'alpha';
 			break;
 		case 2:
-			return 'beta';
+			answer = 'beta';
 			break;
 		case 3:
-			return 'gamma';
+			answer = 'gamma';
 			break;
 		case 4:
-			return 'delta';
+			answer = 'delta';
 			break;
 	}
-
 	return answer;
 }
 
