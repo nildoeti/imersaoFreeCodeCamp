@@ -70,3 +70,19 @@ function bar(x) {
 
 const result2 = bar(0);
 console.log(result2); // Less than two
+
+
+// exemplo com uso de function
+function orderMyLogical(val) {
+	// body...
+	if (val < 5) {
+		return 'Less than 5';
+	} else if (eval < 10) {
+		return 'Less than 10';
+	} else {
+		return 'Greater than or equal 10';
+	}
+}
+
+const result3 = orderMyLogical(2);
+console.log(result3);
