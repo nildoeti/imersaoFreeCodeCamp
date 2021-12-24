@@ -44,30 +44,61 @@ const myFun = (val) => {
 
 
 // solução 1
-function sequentialSizes(val) {
-	var answer = '';
+// function sequentialSizes(val) {
+// 	var answer = '';
 
-	switch (val) {
+// 	switch (val) {
+// 		case 1:
+// 		case 2:
+// 		case 3:
+// 			return 'Low';
+// 			break;
+// 		case 4:
+// 		case 5:
+// 		case 6:
+// 			return 'Mid';
+// 			break;
+// 		case 7:
+// 		case 8:
+// 		case 9:
+// 			return 'High';
+// 			break 
+// 		default:  
+// 			return 'Hello World!';
+// 	}
+// 	return answer;
+// }
+
+// const result = sequentialSizes(78);
+// console.log(result);
+
+
+// sulução 2
+const sequentialSizes = (val) => {
+	let answer = '';
+
+	switch(val) {
 		case 1:
 		case 2:
 		case 3:
-			return 'Low';
+			answer = 'Low'
 			break;
 		case 4:
 		case 5:
 		case 6:
-			return 'Mid';
+			answer = 'Mid';
 			break;
 		case 7:
 		case 8:
 		case 9:
-			return 'High';
-			break 
-		default:  
-			return 'Hello World!';
+			answer = 'High';
+			break;
+		default:
+			answer = 'Hello World';
 	}
+
 	return answer;
 }
 
-const result = sequentialSizes(78);
+const result = sequentialSizes(99);
 console.log(result);
