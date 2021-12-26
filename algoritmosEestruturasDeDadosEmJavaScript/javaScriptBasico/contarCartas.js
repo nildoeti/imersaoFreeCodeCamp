@@ -69,3 +69,20 @@
 // const result1 = cc('A');
 // console.log(result1);
 
+
+// exemplo 2
+const cc = (card) => {
+	let regex = /[JQKA]/;
+
+	if (card > 1 && card < 7) {
+		count++;
+	} else if (card === 10 || regex.test(card)) {
+		count--;
+	}
+
+	if (count > 0) return count + ' Bet';
+		return count + ' Hold';
+}
+
+const result = cc(2);
+console.log(result);
