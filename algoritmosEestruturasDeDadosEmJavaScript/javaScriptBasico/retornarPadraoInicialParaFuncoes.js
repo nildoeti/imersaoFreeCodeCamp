@@ -20,13 +20,23 @@
 */
 
 // exemplo 1
-function myFun(argument) {
-	// body...
-	console.log('Hello');
-	return 'World';
-	console.log('byebye'); // esta declaração não é exibido.
+// function myFun(argument) {
+// 	// body...
+// 	console.log('Hello');
+// 	return 'World';
+// 	console.log('byebye'); // esta declaração não é exibido.
 
+// }
+
+// console.log(myFun());
+
+// exemplo 2
+function abTest(a, b) {
+	// body...
+	if (a < 0 || b <0){return undefined}
+
+  return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
 }
 
-console.log(myFun());
-
+const result = abTest(2, 3);
+console.log(result);
