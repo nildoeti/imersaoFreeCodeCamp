@@ -32,36 +32,40 @@
 	Não inclua aspas (simples ou duplas) na saída.
 
 */
+// exemplo 1
+// let count = 0;
 
-let count = 0;
+// function cc(card) {
+// 	// body...
+// 	switch(card) {
+// 		case 2:
+// 		case 3:
+// 		case 4:
+// 		case 5:
+// 		case 6:
+// 			count++;
+// 			break
+// 		case 10:
+// 		case 'J':
+// 		case 'Q':
+// 		case 'K':
+// 		case 'A':
+// 			count--;
+// 			break;
+// 	}
 
-function cc(card) {
-	// body...
-	switch(card) {
-		case 2:
-		case 3:
-		case 4:
-		case 5:
-		case 6:
-			count++;
-			break
-		case 10:
-		case 'J':
-		case 'Q':
-		case 'K':
-		case 'A':
-			count--;
-			break;
-	}
+// 	if (count > 0) {
+// 		return count + ' => Bet';
+// 	} else {
+// 		return count + ' => Hold';
+// 	}
 
-	if (count > 0) {
-		return count + ' => Bet';
-	} else {
-		return count + ' => Hold';
-	}
+// 	return 'Change Me';
+// }
 
-	return 'Me';
-}
+// const result = cc(5);
+// console.log(result);
 
-let result = cc('A');
-console.log(result);
+// const result1 = cc('A');
+// console.log(result1);
+
