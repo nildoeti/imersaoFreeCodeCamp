@@ -43,3 +43,7 @@ function isEqual(a, b) {
 function isLess(a, b) {
 	return a === b;
 }
+
+const isLess2 = (a, b) => {
+	return a <= b;
+}
