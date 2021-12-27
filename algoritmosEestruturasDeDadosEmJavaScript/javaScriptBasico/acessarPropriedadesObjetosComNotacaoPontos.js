@@ -33,3 +33,20 @@ const prop2val = myObj.prop2;
 
 console.log(prop1val, prop2val);
 
+
+/*
+	Leia os valores de propriedade de testObj usando a notação de ponto. 
+	Defina a variável hatValue igual à propriedade hat do objeto e defina a 
+	variável shirtValue igual à propriedade shirt do objeto.
+*/
+
+const testObj = {
+	'hat': 'ballcap',
+	'shirt': 'jersey',
+	'shoes': 'cleats'
+};
+
+const hatValue = testObj.hat;
+const shirtValue = testObj.shirt;
+
+console.log(hatValue, shirtValue); 
