@@ -39,6 +39,33 @@
 	console.
 
 	Observe que não usamos aspas em torno do nome da variável ao usá-la para 
-	acessar a propriedade, porque estamos usando o valor da variável, e não o nome.
-
+	acessar a propriedade, porque estamos usando o valor da variável, e não o 
+	nome.
 */
+
+// exemplo 1
+
+const dogs = {
+	Fido: 'Mutt',
+	Hunter: 'Doberman',
+	Snoopie: 'Beagle'
+};
+
+const myDog = 'Hunter';
+const dogProp = dogs[myDog];
+console.log(myDog, dogProp);
+
+
+// exemplo 2
+const someObj = {
+	propName: 'John'
+};
+
+function propFix(str) {
+	const s = 'prop';
+	return s + str;
+}
+
+const someProp = propFix('Name');
+const result = someObj[someProp];
+console.log(result);
