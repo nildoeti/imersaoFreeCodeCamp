@@ -84,5 +84,5 @@ const cc = (card) => {
 		return count + ' Hold';
 }
 
-const result = cc(2);
+const result = cc(2);	
 console.log(result);
