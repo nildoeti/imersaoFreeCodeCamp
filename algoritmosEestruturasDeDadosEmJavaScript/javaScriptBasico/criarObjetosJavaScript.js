@@ -63,3 +63,23 @@ const anotherObject = {
 };
 
 console.log(anotherObject);
+
+
+/*
+	Faça um objeto que representa um cachorro chamado myDog que contém as 
+	propriedades name (uma string), legs, tails e friends.
+
+	Você pode definir essas propriedades do objeto para os valores que deseja, 
+	contanto que name seja uma string, legs e tails sejam números, e friends 
+	seja um array.
+
+*/
+
+const myDog = {
+	'name': 'Big',
+	legs: 5,
+	tails: 2,
+	'friends': ['Lilian', 'Tail']
+}
+
+console.log(myDog);
