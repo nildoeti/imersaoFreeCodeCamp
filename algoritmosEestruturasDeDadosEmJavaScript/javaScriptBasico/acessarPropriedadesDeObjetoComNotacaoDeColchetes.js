@@ -40,3 +40,20 @@ const myObjMoreSpace = myObj['More Space'];
 const myObjNoSpace = myObj['NoSpace'];
 
 console.log(myObjPropSpace + ' => ' +  myObjMoreSpace + ' => ' + myObjNoSpace);
+
+/*
+	Leia os valores das propriedades an entree e the drink de testObj usando 
+	notação de colchetes e atribua-os a entreeValue e drinkValue respectivamente.
+*/
+
+const testObj = {
+	'an entree': 'hamburger',
+	'my side': 'veggeis',
+	'the drink': 'water'
+};
+
+
+const testObjEntree = testObj['an entree'];
+const testObjTheDrink = testObj['the drink'];
+
+console.log(testObjEntree + ' -> ' + testObjTheDrink);
