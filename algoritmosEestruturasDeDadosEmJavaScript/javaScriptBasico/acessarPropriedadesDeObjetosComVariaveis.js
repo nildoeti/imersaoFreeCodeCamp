@@ -69,3 +69,15 @@ function propFix(str) {
 const someProp = propFix('Name');
 const result = someObj[someProp];
 console.log(result);
+
+
+// exemplo 3
+const testObj = {
+	12: 'Namath',
+	16: 'Montana',
+	19: 'Unitas'
+};
+
+const playerNumber = 16;
+const player = testObj[playerNumber];
+console.log(player);
