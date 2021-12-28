@@ -37,3 +37,19 @@ const ourDog = {
 let result = ourDog['name'] = 'Happy Camper';
 console.log(result);
 
+/*
+    Desafio
+    Atualize a propriedade name do objeto myDog. Vamos alterar o valor da 
+    propriedade name dele de Coder para Happy Coder. Você pode usar notação de 
+    ponto ou de colchetes.
+*/
+
+const myDog = {
+    'name': 'Coder',
+    'legs': 4,
+    'tail': 1,
+    'friends': ['freeCodeCamp Campers']
+}
+
+const newNane = myDog['name'] = 'Happey Coder';
+console.log(newNane);
