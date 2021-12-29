@@ -63,3 +63,20 @@ const myDog = {
 
 delete myDog.bark;
 console.log(myDog);
+
+/**
+ * Desafio
+ * Exclua a propriedade tails de ourDog. Você pode usar tanto notação de ponto 
+ * quanto notação de colchetes.
+ */
+
+const oursDog = {
+    'name': 'Happy Center',
+    'legs': 4,
+    'tails': 1,
+    'friends': ['freeCodeCamp Campers'],
+    'bark': 'woof'
+};
+
+delete oursDog.tails;
+console.log(oursDog);
