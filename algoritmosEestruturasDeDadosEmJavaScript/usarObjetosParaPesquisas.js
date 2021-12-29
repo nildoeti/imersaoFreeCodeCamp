@@ -1,11 +1,11 @@
 /**
- * 
+ *
  * Usar objetos para pesquisas
 
-    Objetos podem ser pensados como armazenamento de chave/valor, como um 
-    dicionário. Se você tem um dado tabular, você pode usar um objeto para 
-    pesquisar valores ao invés de uma instrução switch ou uma cadeia de if/else. 
-    Isso é mais útil quando você sabe que o seu dado de entrada é limitado 
+    Objetos podem ser pensados como armazenamento de chave/valor, como um
+    dicionário. Se você tem um dado tabular, você pode usar um objeto para
+    pesquisar valores ao invés de uma instrução switch ou uma cadeia de if/else.
+    Isso é mais útil quando você sabe que o seu dado de entrada é limitado
     para um certo intervalo.
 
     Aqui está um exemplo de uma simples pesquisa reversa no alfabeto:
@@ -52,3 +52,56 @@
     const value2 = 26;
     alpha[value2];
     console.log(alpha[value2]); // A
+
+
+    /**
+     * Desafio
+     *
+     * Converta a instrução switch em um objeto chamado lookup. Use-o para
+     * pesquisar por val e atribua a string associada para a variável result.
+     */
+
+    // function phoneticLookup(val) {
+    //     let result = '';
+
+    //     switch (val) {
+    //         case 'alpha':
+    //             result = 'Adams';
+    //             break;
+    //         case 'bravo':
+    //             result = 'Boston';
+    //             break;
+    //         case 'charlie':
+    //             result = 'Chicago';
+    //             break;
+    //         case 'delta':
+    //             result = 'Denver';
+    //             break;
+    //         case 'echo':
+    //             result = 'Easy';
+    //             break;
+    //         case 'foxtrot':
+    //             result = 'Frank';
+    //     }
+    //     return result;
+    // }
+
+    // const result = phoneticLookup('charlie');
+    // console.log(result);
+
+    // convertendo desafio phoneticLookup
+
+    function phoneticLookup(val) {
+        let result = '';
+
+        var lookup = {
+            'alpha': 'Adams',
+            'bravo': 'Boston',
+            'charlie': 'Chicago',
+            'delta': 'Denver',
+            'echo': 'Easy',
+            'foxtrot': 'Frank'
+        };
+        result = lookup(val);
+        return result;
+    }
