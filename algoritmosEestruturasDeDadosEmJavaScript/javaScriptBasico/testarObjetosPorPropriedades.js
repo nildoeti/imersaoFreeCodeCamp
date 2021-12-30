@@ -23,10 +23,27 @@
 
 const myObj = {
     top: 'hat',
-    bottom: 'pants'
+    bottom: 'pants',
+    bet: 'undefined'
 };
 
-const isTrue = myObj.hasOwnProperty('top');
-const isFalse = myObj.hasOwnProperty('middle');
+const isTrue = myObj.hasOwnProperty('isTrue'); // true
+const isBottom = myObj.hasOwnProperty('isBottom'); // false
+const isBet = myObj.hasOwnProperty('bet');
 
-console.log(isTrue, isFalse);
+console.log(isTrue, isBottom, isBet);
+
+// exemplo com for/in
+// font: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty
+var buz = {
+    fog: 'stack'
+};
+
+for (var nome in buz) {
+    if (buz.hasOwnProperty(nome)) {
+        console.log("this is fog (" + nome + ") for sure. Value: " + buz[nome]);
+    }
+    else {
+        console.log(nome); // toString ou qualquer outra coisa
+    }
+}
