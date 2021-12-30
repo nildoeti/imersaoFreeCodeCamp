@@ -47,3 +47,23 @@ for (var nome in buz) {
         console.log(nome); // toString ou qualquer outra coisa
     }
 }
+
+
+/*
+    Desafio
+    Modifique a função checkObj para verificar se um objeto passado para a
+    função (obj) contém uma propriedade específica (checkProp). Se a propriedade
+    for encontrada, retorne o valor da propriedade. Se não, retorne "Not Found".
+*/
+
+function checkObj(obj, checkProp) {
+    if (obj.hasOwnProperty) {
+        return obj[checkObj];
+    } else {
+        return 'Not Found.'
+    }
+    return 'Change Me!';
+}
+
+const result = checkObj();
+console.log(result);
