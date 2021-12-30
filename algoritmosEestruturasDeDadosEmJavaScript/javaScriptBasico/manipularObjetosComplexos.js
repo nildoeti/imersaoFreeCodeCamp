@@ -60,3 +60,30 @@ const ourMusic = [
     ],
     }
 ];
+
+
+/*
+    Adicione um novo álbum para o array myMusic. Adicione as strings artist e
+    title, o número release_year e um array de strings formats.
+*/
+
+const myMusic = [
+  {
+    "artist": "Billy Joel",
+    "title": "Piano Man",
+    "release_year": 1973,
+    "formats": [
+      "CD",
+      "8T",
+      "LP"
+    ],
+    "gold": true
+  },
+  {
+        'artist': 'Roxette',
+        'title': 'Look Sharp',
+        'release_year': 1988,
+        'formats': ['CD', '8T'],
+        'gold': false
+    }
+];
