@@ -97,4 +97,23 @@ console.log(result12); // Frankie
 const result13 = ourPets[1].names[3];
 console.log(result13); // undefined
 
- 
+ /*
+ 	Desafio
+
+ 	Usando a notação de ponto e de colchetes, defina a variável secondTree para 
+ 	o segundo item na lista de trees do objeto myPlants.
+ */
+
+ const myPlants = [
+ 	{
+ 		type: 'flower',
+ 		list: ['rose', 'tulip', 'dandelion']
+ 	},
+ 	{
+ 		type: 'trees',
+ 		list: ['fir', 'pine', 'birch']
+ 	}
+ ];
+
+ const secondTree = myPlants[1].list[1];
+ console.log(secondTree); // { type: 'trees', list: [ 'fir', 'pine', 'birch' ] }
