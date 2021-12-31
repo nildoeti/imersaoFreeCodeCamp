@@ -39,7 +39,12 @@ const ourStorage = {
     }
 };
 
-const result1 = ourStorage.cabinet['top drawer'].folder2;
-const result2 = ourStorage.desk.drawer;
 
-console.log(result1, result2); // secrets, stapler
+const result1 = ourStorage.desk.drawer; // stapler
+const result2 = ourStorage.desk; // { drawer: 'stapler' }
+const result3 = ourStorage.cabinet['top drawer']; // { folder1: ' a file', folder2: 'secrets' }
+const result4 = ourStorage.cabinet['top drawer'].folder1; //  a file
+const result5 = ourStorage.cabinet['top drawer'].folder2; // secrets
+const result6 = ourStorage.cabinet['bottom drawer']; // soda
+
+console.log(result1, result2, result3, result4, result5, result6);
