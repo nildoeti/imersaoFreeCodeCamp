@@ -102,3 +102,4 @@ function updateRecords(records, id, prop, value) {
 
 const result1 = updateRecords(recordCollection, 5439, 'artist', 'ABBA');
 console.log(result1);
+
