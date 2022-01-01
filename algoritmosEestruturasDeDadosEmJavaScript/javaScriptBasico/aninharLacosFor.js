@@ -20,12 +20,35 @@
 	.length de arr[i], desde que arr[i] também seja um array.
 */
 
-const arr = [
-	[1, 2], [3, 4], [5, 6]
-];
+// const arr = [
+// 	[1, 2], [3, 4], [5, 6]
+// ];
 
-for (let i = 0; i < arr.length; i++) {
+// for (let i = 0; i < arr.length; i++) {
+// 		for (let j = 0; j < arr[i].length; j++) {
+// 			console.log(arr[i][j]);
+// 	}
+// }
+
+/*
+	Desafio
+
+	Modifique a função multiplyAll para que retorne o produto de todos os 
+	números nos sub-arrays de arr.
+*/
+
+// exemplo 1
+function multiplyAll(arr) {
+	let product = 1;
+
+	for (let i = 0; i < arr.length; i++) {
 		for (let j = 0; j < arr[i].length; j++) {
-			console.log(arr[i][j]);
+			product = product * arr[i][j];
+		}
 	}
+
+	return product;
 }
+
+let result = multiplyAll([[1, 2], [3, 4], [5, 6]]);
+console.log(result);
