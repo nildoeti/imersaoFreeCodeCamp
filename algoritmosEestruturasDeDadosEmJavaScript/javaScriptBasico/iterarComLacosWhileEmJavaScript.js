@@ -43,3 +43,20 @@ while (x < 5) {
 }
 
 console.log(arrayIn);
+
+/*
+	Desafio
+	
+	Adicione os números de 5 até 1 (inclusive) em ordem descendente para myArray 
+	usando um laço while.
+*/
+
+const myArray2 = [];
+let y = 5;
+
+while (y >= 0) {
+	myArray2.push(y);
+	y--;
+}
+
+console.log(myArray2	);
