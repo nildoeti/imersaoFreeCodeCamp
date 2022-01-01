@@ -59,21 +59,47 @@
 */
 
 // exemplo 1, while
-const ourArr1 = [];
-let i = 0;
+// const ourArr1 = [];
+// let i = 0;
 
-while (i < 5) {
-	ourArr1.push(i);
-	i++;
-}
+// while (i < 5) {
+// 	ourArr1.push(i);
+// 	i++;
+// }
 
-// exemplo 2, do...while
-const ourArr2 = [];
-let j = 0;
+// // exemplo 2, do...while
+// const ourArr2 = [];
+// let j = 0;
 
+// do {
+// 	ourArr2.push(j);
+// 	j++;
+// } while (j < 5);
+
+// console.log(ourArr1, ourArr2);
+
+/*
+	Desafio
+
+	Altere o laço while no código para um laço do...while para que o laço
+	adicione apenas o número 10 no myArray e i será igual a 11 quando seu 
+	código terminar de rodar.
+*/
+
+// Configuração
+const myArray = [];
+let i = 10;
+
+// antes
+// while (i < 5) {
+// 	myArray.push(i);
+// 	i++;
+// }
+
+// depois
 do {
-	ourArr2.push(j);
-	j++;
-} while (j < 5);
+	myArray.push(i);
+	i++;
+} while (i < 10);
 
-console.log(ourArr1, ourArr2);
+console.log(myArray);
