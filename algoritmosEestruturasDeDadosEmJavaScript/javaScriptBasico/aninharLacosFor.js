@@ -52,3 +52,19 @@ function multiplyAll(arr) {
 
 let result = multiplyAll([[1, 2], [3, 4], [5, 6]]);
 console.log(result);
+
+// exemplo 2
+let myArray = (val) => {
+	let multiply = 1;
+
+	for (let x = 0; x < val.length; x++) {
+		for (let y = 0; y < val[x].length; y++) {
+			multiply *= val[x][y];
+		}
+	}
+
+	return multiply;
+}
+
+let result2 = myArray([[2, 3], [4, 5], 6, 7]);
+console.log(result2);
