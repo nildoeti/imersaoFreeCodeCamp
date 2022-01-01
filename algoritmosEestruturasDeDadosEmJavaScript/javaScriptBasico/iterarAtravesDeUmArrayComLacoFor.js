@@ -19,8 +19,22 @@
 	laço é interrompido porque i < arr.length é false.
 */
 
-const arr = [10, 9, 8, 7, 6];
-for (let i = 0; i < arr.length; i++) {
-	console.log(arr[i]);
-}
+// const arr = [10, 9, 8, 7, 6];
+// for (let i = 0; i < arr.length; i++) {
+// 	console.log(arr[i]);
+// }
 
+
+/*
+	Desafio
+	Declare e inicialize uma variável total como 0. Use um laço for para 
+	adicionar o valor de cada elemento do array myArr para total.
+*/
+
+let myArray = [2, 3, 4, 5, 6];
+
+let total = 0;
+for (let i = 0; i < myArray.length; i++) {
+	total += myArray[i];
+	console.log(total);
+}
