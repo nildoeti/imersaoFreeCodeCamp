@@ -43,3 +43,11 @@ for (let i = 0; i < 5; i++) {
 	ourArray.push(i);
 }
 console.log(ourArray);
+
+// Use o laço for para adicionar os valores de 1 até 5 dentro de myArray.
+const myArray = [];
+for (let i = 0; i < 5; i++) {
+	myArray.push(i);
+}
+
+console.log(myArray);
