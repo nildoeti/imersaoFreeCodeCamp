@@ -27,3 +27,12 @@ for (let i = 10; i > 0; i-= 2) {
 	ourArray.push(i);
 }
 console.log(ourArray);
+
+// Desafio
+// Adicione (push) os números ímpares de 9 até 1 para myArray usando um laço for.
+
+const myArray = [];
+for (let i = 9; i >= 0; i -= 2){
+	myArray.push(i);
+}
+console.log(myArray);
