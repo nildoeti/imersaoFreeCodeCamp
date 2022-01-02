@@ -25,8 +25,15 @@
 // }
 
 // SOLUÇÃO 2
+// function rangeOfNumbers(startNum, endNum) {
+// 	return startNum === endNum
+// 	? [startNum]
+// 	: rangeOfNumbers(startNum, endNum -1).concat(endNum);
+// };
+
+// SOLUÇÃO 3
 function rangeOfNumbers(startNum, endNum) {
-	return startNum === endNum
+	return startNum === endNum;
 	? [startNum]
-	: rangeOfNumbers(startNum, endNum -1).concat(endNum);
-};
+	: [...rangeOfNumbers(startNum, endNum - 1), endNum];
+}
