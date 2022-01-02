@@ -98,4 +98,15 @@ for (i = 0; i < 3; i++) {
 console.log(numArray2); // [ 0, 1, 2 ]
 console.log(i); // 3
 
+// exemplo 3
+var printNumTwo;
+for (var i = 0; i < 3; i++) {
+	if (i === 2) {
+		printNumTwo = function () {
+			return i;
+		}
+	}
+}
 
+console.log(printNumTwo()); // 3
+console.log(printNumTwo); // 3
