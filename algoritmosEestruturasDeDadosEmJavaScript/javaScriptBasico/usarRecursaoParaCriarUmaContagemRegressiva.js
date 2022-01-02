@@ -40,45 +40,68 @@
 */
 
 // exemplo 1
-function countup(n) {
+// function countup(n) {
+//     if (n < 1) {
+//         return [];
+//     } else {
+//         // aqui é a chamada da função recursiva
+//         const countArray = countup(n -1);
+//         countArray.push(n);
+//         return countArray;
+//     }
+// }
+
+// console.log(countup(5));
+
+// exemplo 2
+// const myArray = (number) => {
+//     if (number < 1) {
+//         return `${number} é menor que 1`;
+//     } else {
+//         // aqui é a chamada da função recursiva
+//         const ourArray = myArray(number - 1);
+//         ourArray.push(number);
+//         return ourArray
+//     }
+// }
+
+// console.log(myArray(0));
+
+// exemplo 3
+// const myArray2 = (number) => {
+//     if (number === 0) {
+//         return `${number} é igual a zero`;
+//     } else if (number < 0) {
+//         return `${number}  é menor que zero`;
+//     } else {
+//         // aqui é a chamada da função recursiva
+//         const ourArray = myArray2(number - 1); 
+//         ourArray.push(number);
+//         return ourArray
+//     }
+// }
+
+// console.log(myArray2(1));
+
+
+/*
+    Definimos uma função chamada countdown com um parâmetro (n). A função deve 
+    usar recursão para retornar um array contendo inteiros n até 1 com base no 
+    parâmetro n. Se a função é chamada com um número menor que 1, a função deve 
+    retornar um array vazio. Por exemplo, chamar essa função com n = 5 deve 
+    retornar o array [5, 4, 3, 2, 1]. Sua função precisa usar recursão para 
+    chamar a si mesma e não depender de nenhum tipo de laço.
+*/
+
+// solução 1
+function countdown(n) {
     if (n < 1) {
         return [];
     } else {
-        // aqui é a chamada da função recursiva
-        const countArray = countup(n -1);
-        countArray.push(n);
-        return countArray;
+        const err = countdown(n - 1);
+        err.unshift(n);
+        return err;
     }
 }
 
-console.log(countup(5));
-
-// exemplo 2
-const myArray = (number) => {
-    if (number < 1) {
-        return `${number} é menor que 1`;
-    } else {
-        // aqui é a chamada da função recursiva
-        const ourArray = myArray(number - 1);
-        ourArray.push(number);
-        return ourArray
-    }
-}
-
-console.log(myArray(0));
-
-// exemplo 3
-const myArray2 = (number) => {
-    if (number === 0) {
-        return `${number} é igual a zero`;
-    } else if (number < 0) {
-        return `${number}  é menor que zero`;
-    } else {
-        // aqui é a chamada da função recursiva
-        const ourArray = myArray2(number - 1); 
-        ourArray.push(number);
-        return ourArray
-    }
-}
-
-console.log(myArray2(-1));
+console.log(countdown(5));
