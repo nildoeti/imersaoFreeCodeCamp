@@ -90,7 +90,7 @@ console.log(i); // 3
 
 // exemplo 2
 var printNumTwo;
-for (var i = 0; i < 3; i++) {
+for (var i = 0; i < 5; i++) {
 	if (i === 2) {
 		printNumTwo = function() {
 			return i;
@@ -99,3 +99,4 @@ for (var i = 0; i < 3; i++) {
 }
 
 console.log(printNumTwo()); // 3
+
