@@ -51,3 +51,17 @@ function countup(n) {
 }
 
 console.log(countup(5));
+
+// exemplo 2
+const myArray = (number) => {
+    if (number < 1) {
+        return `${number} é menor que 1`;
+    } else {
+        const ourArray = myArray(number - 1);
+        ourArray.push(number);
+        return ourArray
+    }
+}
+
+console.log(myArray(0));
+
