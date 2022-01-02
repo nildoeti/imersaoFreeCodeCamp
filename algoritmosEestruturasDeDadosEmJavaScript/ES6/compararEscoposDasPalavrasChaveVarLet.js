@@ -87,3 +87,15 @@ for (var i = 0; i < 3; i++) {
 console.log(numArray); // [ 0, 1, 2 ]
 console.log(i); // 3
 
+
+// exemplo 2
+var numArray2 = [];
+var i;
+for (i = 0; i < 3; i++) {
+	numArray2.push(i);
+}
+
+console.log(numArray2); // [ 0, 1, 2 ]
+console.log(i); // 3
+
+
