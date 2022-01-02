@@ -14,12 +14,19 @@
 */
 
 // SOLUÇÃO 1
+// function rangeOfNumbers(startNum, endNum) {
+// 	if (endNum - startNum === 0) {
+// 		return [startNum];
+// 	} else {
+// 		let numbers = rangeOfNumbers(startNum, endNum - 1);
+// 		numbers.push(endNum)
+// 		return numbers;
+// 	}
+// }
+
+// SOLUÇÃO 2
 function rangeOfNumbers(startNum, endNum) {
-	if (endNum - startNum === 0) {
-		return [startNum];
-	} else {
-		let numbers = rangeOfNumbers(startNum, endNum - 1);
-		numbers.push(endNum)
-		return numbers;
-	}
-}
+	return startNum === endNum
+	? [startNum]
+	: rangeOfNumbers(startNum, endNum -1).concat(endNum);
+};
