@@ -87,3 +87,15 @@ for (i = 0; i < 3; i++) {
 
 console.log(numArray); // [ 0, 1, 2 ]
 console.log(i); // 3
+
+// exemplo 2
+var printNumTwo;
+for (var i = 0; i < 3; i++) {
+	if (i === 2) {
+		printNumTwo = function() {
+			return i;
+		}
+	}
+}
+
+console.log(printNumTwo()); // 3
