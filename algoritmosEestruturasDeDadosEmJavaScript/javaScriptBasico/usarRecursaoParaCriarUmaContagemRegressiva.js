@@ -94,13 +94,26 @@
 */
 
 // solução 1
+// function countdown(n) {
+//     if (n < 1) {
+//         return [];
+//     } else {
+//         const err = countdown(n - 1);
+//         err.unshift(n);
+//         return err;
+//     }
+// }
+
+// console.log(countdown(5));
+
+// solução 2
 function countdown(n) {
     if (n < 1) {
         return [];
     } else {
-        const err = countdown(n - 1);
-        err.unshift(n);
-        return err;
+        const arr = countdown(n - 1);
+        arr.splice(0, 0, n);
+        return arr;
     }
 }
 
