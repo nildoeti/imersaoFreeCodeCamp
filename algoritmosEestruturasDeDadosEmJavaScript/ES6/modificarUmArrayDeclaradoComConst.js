@@ -28,9 +28,19 @@
 */
 
 // exemplo 1
-const s = [5, 6, 7];
+// const s = [5, 6, 7];
+// // s = [1, 2, 3] // TypeError: Assignment to constant variable.
+// s[2] = 45; // [ 5, 6, 45 ]
+// console.log(s);
 
-// s = [1, 2, 3] // TypeError: Assignment to constant variable.
-s[2] = 45; 
+/*
+	Um array é declarado: const s = [5, 7, 2]. Modifique o array para [2, 5, 7] 
+	usando várias atribuições de elementos.
+*/
 
-console.log(s);
+const s = [5, 7, 2];
+function editInPlace() {
+	s[0] = 2;
+	s[1] = 5;
+	s[2] = 7;
+}
