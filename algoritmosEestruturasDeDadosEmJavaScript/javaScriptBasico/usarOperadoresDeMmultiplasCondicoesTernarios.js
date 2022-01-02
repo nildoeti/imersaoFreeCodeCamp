@@ -50,3 +50,10 @@ function findGreaterOrEqual(a, b) {
     }
 }
 
+// exemplo acima com uso do operador tenário
+function findGreaterOrEqual2(a, b) {
+    return (a === b)? 'a and b are equal' 
+    : (a > b)? 'a is greater' : 'b is greater';
+
+}
+
