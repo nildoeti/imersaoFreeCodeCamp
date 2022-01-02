@@ -94,7 +94,7 @@
     function phoneticLookup(val) {
         let result = '';
 
-        var lookup = 
+        var lookup = {
             'alpha': 'Adams',
             'bravo': 'Boston',
             'charlie': 'Chicago',
