@@ -44,6 +44,7 @@ function countup(n) {
     if (n < 1) {
         return [];
     } else {
+        // aqui é a chamada da função recursiva
         const countArray = countup(n -1);
         countArray.push(n);
         return countArray;
@@ -57,6 +58,7 @@ const myArray = (number) => {
     if (number < 1) {
         return `${number} é menor que 1`;
     } else {
+        // aqui é a chamada da função recursiva
         const ourArray = myArray(number - 1);
         ourArray.push(number);
         return ourArray
@@ -65,3 +67,18 @@ const myArray = (number) => {
 
 console.log(myArray(0));
 
+// exemplo 3
+const myArray2 = (number) => {
+    if (number === 0) {
+        return `${number} é igual a zero`;
+    } else if (number < 0) {
+        return `${number}  é menor que zero`;
+    } else {
+        // aqui é a chamada da função recursiva
+        const ourArray = myArray2(number - 1); 
+        ourArray.push(number);
+        return ourArray
+    }
+}
+
+console.log(myArray2(-1));
