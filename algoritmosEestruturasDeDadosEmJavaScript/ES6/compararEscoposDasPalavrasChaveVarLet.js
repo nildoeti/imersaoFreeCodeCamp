@@ -78,35 +78,47 @@
 
 */
 
-// exemplo 1
-var numArray = [];
-for (var i = 0; i < 3; i++) {
-	numArray.push(i)
-}
+// // exemplo 1
+// var numArray = [];
+// for (var i = 0; i < 3; i++) {
+// 	numArray.push(i)
+// }
 
-console.log(numArray); // [ 0, 1, 2 ]
-console.log(i); // 3
+// console.log(numArray); // [ 0, 1, 2 ]
+// console.log(i); // 3
 
 
-// exemplo 2
-var numArray2 = [];
-var i;
-for (i = 0; i < 3; i++) {
-	numArray2.push(i);
-}
+// // exemplo 2
+// var numArray2 = [];
+// var i;
+// for (i = 0; i < 3; i++) {
+// 	numArray2.push(i);
+// }
 
-console.log(numArray2); // [ 0, 1, 2 ]
-console.log(i); // 3
+// console.log(numArray2); // [ 0, 1, 2 ]
+// console.log(i); // 3
 
-// exemplo 3
-var printNumTwo;
-for (var i = 0; i < 3; i++) {
+// // exemplo 3
+// var printNumTwo;
+// for (var i = 0; i < 3; i++) {
+// 	if (i === 2) {
+// 		printNumTwo = function () {
+// 			return i;
+// 		}
+// 	}
+// }
+
+// console.log(printNumTwo()); // 3
+
+// exemplo 4
+let printNumTwo2;
+for (let i = 0; i < 3; i++) {
 	if (i === 2) {
-		printNumTwo = function () {
+		printNumTwo2 = function() {
 			return i;
 		}
 	}
 }
 
-console.log(printNumTwo()); // 3
-console.log(printNumTwo); // 3
+console.log(printNumTwo2()); // 2
+console.log(i); // ReferenceError: i is not defined, pois esta fora do escopo global
