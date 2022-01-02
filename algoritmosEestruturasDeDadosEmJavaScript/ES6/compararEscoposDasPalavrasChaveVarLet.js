@@ -111,14 +111,39 @@
 // console.log(printNumTwo()); // 3
 
 // exemplo 4
-let printNumTwo2;
-for (let i = 0; i < 3; i++) {
-	if (i === 2) {
-		printNumTwo2 = function() {
-			return i;
-		}
+// let printNumTwo2;
+// for (let i = 0; i < 3; i++) {
+// 	if (i === 2) {
+// 		printNumTwo2 = function() {
+// 			return i;
+// 		}
+// 	}
+// }
+
+// console.log(printNumTwo2()); // 2
+// console.log(i); // ReferenceError: i is not defined, pois esta fora do escopo global
+
+
+/*
+	Corrija o código para que a variável i declarada dentro do comando if seja 
+	diferente da variável i declarada na primeira linha da função. Tenha certeza 
+	de não usar a palavra-chave var em nenhum lugar do seu código.
+
+	Este exercício foi projetado para ilustrar a diferença ente como as 
+	palavras-chaves var e let definem o escopo para a variável declarada. Quando 
+	programamos uma função semelhante a aquelas utilizadas no exercício, 
+	geralmente, é melhor utilizar variáveis distintas para evitar confusão.
+*/
+
+function checkScopo() {
+	let i = 'function scope';
+	
+	if (true) {
+		let i = 'block scope';
+		console.log('Block scope i is: ', i);
 	}
+	console.log('Block scope i is: ', i);
+	return i;
 }
 
-console.log(printNumTwo2()); // 2
-console.log(i); // ReferenceError: i is not defined, pois esta fora do escopo global
+console.log(checkScopo());
