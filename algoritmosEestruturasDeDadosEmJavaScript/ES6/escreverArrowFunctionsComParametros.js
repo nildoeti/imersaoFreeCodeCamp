@@ -23,6 +23,14 @@
 */
 
 // exemplo 1
-const doubler = (item) => item * 2;
-const p1 = doubler(4);
-console.log(p1); // 8
+// passar argumentos para uma arrow function.
+// const doubler = (item) => item * 2;
+// const p1 = doubler(4);
+// console.log(p1); // 8
+
+// exemplo 2
+// os parênteses envolvendo arrow function tiver com um único parâmetro,  
+// podem ser omitidos.
+const doubler = item => item * 4;
+const result = doubler(5);
+console.log(result); // 20
