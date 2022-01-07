@@ -33,7 +33,15 @@
 */
 
 // exemplo de função padrão
-const myFun = function() {
+// const myFun = function() {
+// 	const myVar = 'value';
+// 	return myVar;
+// }
+
+// função anônimas com base na ES6
+const myFun = () => {
 	const myVar = 'value';
-	return myVar;
+	return myVar
 }
+const p1 = myFun();
+console.log(p1);
