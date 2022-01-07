@@ -35,13 +35,18 @@
 // exemplo de função padrão
 // const myFun = function() {
 // 	const myVar = 'value';
-// 	return myVar;
+// 	return m
+
 // }
 
 // função anônimas com base na ES6
-const myFun = () => {
-	const myVar = 'value';
-	return myVar
-}
-const p1 = myFun();
-console.log(p1);
+// const myFun = () => {
+// 	const myVar = 'value';
+// 	return myVar
+// }
+// const p1 = myFun();
+// console.log(p1);
+
+// funções menores em chaves
+const myFun = () =>  'value';
+console.log(myFun());
