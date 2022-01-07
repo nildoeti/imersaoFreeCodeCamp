@@ -48,5 +48,22 @@
 // console.log(p1);
 
 // funções menores em chaves
-const myFun = () =>  'value';
-console.log(myFun());
+// const myFun = () =>  'value';
+// console.log(myFun());
+
+/*
+	Desafio
+	Rescreva a função atribuída à variável magic usando a sintaxe de arrow 
+	function. A função deve retornar new Date(). Além disso, garanta que nada 
+	seja definido usando a palavra-chave var.
+*/
+
+// problema
+var magic function() {
+	return new Date();
+};
+
+// resposta
+const magic = () => {
+	return new Date;
+};
