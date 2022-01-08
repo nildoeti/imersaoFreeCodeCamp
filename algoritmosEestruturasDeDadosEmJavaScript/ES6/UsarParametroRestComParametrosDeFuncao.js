@@ -30,9 +30,29 @@
 // console.log(howMany('string', null, [1, 2, 3], {}))
 
 // exemplo 2
-const totalArguments = (...args) => {
-	return 'total of ' + args.length + ' arguments';
+// const totalArguments = (...args) => {
+// 	return 'total of ' + args.length + ' arguments';
+// }
+
+// console.log(totalArguments(2, 3, 5, 6, 7));
+// console.log(totalArguments(1, 3, [4, 5], {}, 4, [6, 7, [8, 9]], 0, 'string'));
+
+/*
+	Modifique a função sum usando o parâmetro rest de tal forma que a função 
+	sum seja capaz de receber qualquer número de argumentos e retornar a 
+	soma deles.
+*/ 
+
+// // desafio
+// const sum = (x, y, z) => {
+// 	const args = [x, y, z];
+// 	return args.reduce((a, b) => a + b, 0);	
+// }
+
+// solução
+const sum = (...args) => {
+	return args.reduce((a, b) => a + b, 0);
 }
 
-console.log(totalArguments(2, 3, 5, 6, 7));
-console.log(totalArguments(1, 3, [4, 5], {}, 4, [6, 7, [8, 9]], 0, 'string'));
+const result = sum(1, 2, 3);
+console.log(result);
