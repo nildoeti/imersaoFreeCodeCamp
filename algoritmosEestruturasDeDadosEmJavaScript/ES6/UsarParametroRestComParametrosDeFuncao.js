@@ -22,9 +22,17 @@
 */
 
 // exemplo 1
-function howMany(...args) {
-	return 'You have passed ' + args.length + ' arguments';
+// function howMany(...args) {
+// 	return 'You have passed ' + args.length + ' arguments';
+// }
+
+// console.log(howMany(1, 2, 3));
+// console.log(howMany('string', null, [1, 2, 3], {}))
+
+// exemplo 2
+const totalArguments = (...args) => {
+	return 'total of ' + args.length + ' arguments';
 }
 
-console.log(howMany(1, 2, 3));
-console.log(howMany('string', null, [1, 2, 3], {}))
+console.log(totalArguments(2, 3, 5, 6, 7));
+console.log(totalArguments(1, 3, [4, 5], {}, 4, [6, 7, [8, 9]], 0, 'string'));
