@@ -51,9 +51,8 @@
 
 // solução
 const sum = (...args) => {
-	return args.reduce((a, b) => a + b, 0);
+	return args.reduce((a, b) => a + b + 0);
 }
 
-const result = sum(1, 2, 3);
+const result = sum(1, 2, 3)
 console.log(result);
-
