@@ -41,3 +41,13 @@ console.log(result2); // -Infinity
 let arr3 = [1, 2, 3, 4, 5];
 let result3 = Math.max.apply(null, arr3);
 console.log(result3); // 5
+
+
+// uso de sintaxe de espalhamento spread
+let arr4 = [4, 5, 3, 64, -9, 0, 1];
+const maximus = Math.max(...arr4);
+console.log(maximus); // 64
+
+let arr5 = [4, -9, 0, 55, 3];
+const minimus = Math.min(...arr5);
+console.log(minimus);
