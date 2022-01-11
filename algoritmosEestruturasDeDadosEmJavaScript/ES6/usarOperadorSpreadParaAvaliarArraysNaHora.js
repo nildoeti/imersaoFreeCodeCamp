@@ -50,4 +50,16 @@ console.log(maximus); // 64
 
 let arr5 = [4, -9, 0, 55, 3];
 const minimus = Math.min(...arr5);
-console.log(minimus);
+console.log(minimus); // -9
+
+
+// aplicação 1
+function howMany(...args) {
+    return 'you have passed ' + args.length + ' arguments';
+}
+
+const result7 = howMany(3, 6, 5);
+const result8 = howMany(3, 'string', {}, [4, 3], 5, [[3], 6, 5])
+console.log(result7);
+console.log(result8);
+
