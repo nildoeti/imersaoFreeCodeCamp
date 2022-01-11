@@ -1,0 +1,1 @@
+usarAtribuicaoDeDesestruturacaoParaExtrairValoresDeObjetos.js
