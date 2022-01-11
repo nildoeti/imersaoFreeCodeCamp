@@ -64,3 +64,11 @@ console.log(result7);
 console.log(result8);
 
 
+/*
+    Desafio
+    Copie todo o conteúdo de arr1 em outro array arr2 usando o operador spread.
+*/
+
+const arr6 = ['JAN', 'FEV', 'MAR', 'ABR', 'MAIO' ];
+const arr7 = [...arr6];
+console.log(arr7);
