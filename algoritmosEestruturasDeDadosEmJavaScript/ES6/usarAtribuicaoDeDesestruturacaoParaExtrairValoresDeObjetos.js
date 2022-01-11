@@ -37,3 +37,16 @@ console.log(name, age); // John 20
 const { name1, age2 } = user;
 console.log(user);
 
+/*
+	Substitua as duas atribuições com a atribuição de desestruturação 
+	equivalente. Ainda deve ser atribuído às valores today e tomorrow os 
+	valores de today e tomorrow do objeto HIGH_TEMPERATURES.
+*/
+
+const HIGH_TEMPERATURES = {
+	yesterday: 75,
+	today: 77,
+	tomorrow: 80
+};
+
+const {today, tomorrow} = HIGH_TEMPERATURES;	
