@@ -42,4 +42,34 @@ const {johnDoe: {age, email}} = user;
  /*
 
  const {johnDoe: {age: userAge, email: userEmail}} = user;
- 
+
+
+ /*
+ 	Substitua as duas atribuições com uma atribuição de desestruturação 
+ 	equivalente. Ainda deve ser atribuído às variáveis lowToday e highToday os 
+ 	valores de today.low e today.high do objeto LOCAL_FOR
+ */
+
+ const LOCAL_FORECAST = {
+ 	yesterday: {low: 61, high: 75},
+ 	today: {low: 64, high: 77},
+ 	tomorrow: {low: 68, high: 80}
+ };
+// Substitua as duas atribuições com uma atribuição de desestruturação 
+const lowYesterday = LOCAL_FORECAST.yesterday.low; // 61
+const highyesterday = LOCAL_FORECAST.yesterday.high; // 75
+
+console.log(lowYesterday);
+console.log(highyesterday);
+
+const lowToday = LOCAL_FORECAST.today.low;
+const highToday = LOCAL_FORECAST.today.high;
+
+console.log(lowToday); // 64
+console.log(highToday); // 77
+
+const lowTomorrow = LOCAL_FORECAST.tomorrow.low;
+const highTomorrow = LOCAL_FORECAST.tomorrow.high;
+
+console.log(lowTomorrow); // 68
+console.log(highTomorrow); // 80
