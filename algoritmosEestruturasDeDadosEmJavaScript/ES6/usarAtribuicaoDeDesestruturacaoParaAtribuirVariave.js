@@ -19,45 +19,8 @@
 
 */
 
-// forma normal para declarar objetos
-//const user = {
-    //name: 'John Doe',
-    //age: 34
-    //};
+// atribuição de desestruturação
+const user = {name: 'John Doe', age: 34};
+const {name: userName, age: userAge} = user;
 
-//// acessando as propriedades do objeto
-//const userName = user.name;
-//const userAge = user.age;
-
-// forma atribuição de desestruturação
-// const {name: userName, age: ageuser} = user;
-
-/*
-	Substitua as duas atribuições com uma atribuição de desestruturação para HIGH_TEMPERATUR, highToday, highTomorrowES
-	equivalente. Ainda deve ser atribuído às variáveis highToday e highTomorrow 
-	os valores de today e tomorrow do objeto HIGH_TEMPERATURES.
-*/
-
-// const HIGH_TEMPERATURES = {
-// 	yesterday: 75,
-// 	today: 77,
-// 	tomorrow: 80
-// };
-
-// // acessando os objetos e suas propriedades no modo normal
-// const highYesterday = HIGH_TEMPERATURES.yesterday;
-// const highToday = HIGH_TEMPERATURES.today;
-// const highTomorrow = HIGH_TEMPERATURES.tomorrow;
-
-// // exibindo os dados selecionados do objeto HIGH_TEMPERATURES
-// console.log(highYesterday, highToday, highTomorrow); // 75 77 80
-
-
-// atribuição de desestruturação para HIGH_TEMPERATURES
-const {
-		yesterday: highYesterday, 
-		today: highToday, 
-		tomorrow: highTomorrow
-	} = HIGH_TEMPERATURES;
-
-	
+console.log(userName, userAge);
