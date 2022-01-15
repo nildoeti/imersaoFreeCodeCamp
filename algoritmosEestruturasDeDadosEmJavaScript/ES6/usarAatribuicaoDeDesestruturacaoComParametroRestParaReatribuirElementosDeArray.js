@@ -1,0 +1,1 @@
+usarAatribuicaoDeDesestruturacaoComParametroRestParaReatribuirElementosDeArray.js
