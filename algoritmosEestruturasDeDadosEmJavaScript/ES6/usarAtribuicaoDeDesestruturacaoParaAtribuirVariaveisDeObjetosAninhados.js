@@ -63,6 +63,11 @@ const LOCAL_FORECAST = {
 };
 
 // problema para resolver
-const lowToday = LOCAL_FORECAST.today.low;
-const highToday = LOCAL_FORECAST.today.high;
-console.log(lowToday, highToday); 54, 77
+// const lowToday = LOCAL_FORECAST.today.low;
+// const highToday = LOCAL_FORECAST.today.high;
+// console.log(lowToday, highToday); 54, 77
+
+// solução
+const {today: {low: lowToday, high: highToday} } = LOCAL_FORECAST;
+console.log(lowToday); // 54
+console.log(highToday);
