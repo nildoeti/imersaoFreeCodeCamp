@@ -1,0 +1,1 @@
+descreverDeclaracoesLiteraisdeObjetosConcisasUsandoFormaAbreviadaDePropriedadeDeObjeto.js
