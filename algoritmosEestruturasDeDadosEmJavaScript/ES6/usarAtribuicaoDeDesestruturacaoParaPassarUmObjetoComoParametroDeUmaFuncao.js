@@ -1,0 +1,1 @@
+usarAtribuicaoDeDesestruturacaoParaPassarUmObjetoComoParametroDeUmaFuncao.js
