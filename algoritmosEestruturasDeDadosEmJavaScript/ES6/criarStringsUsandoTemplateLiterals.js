@@ -33,6 +33,21 @@
 	expressões. Como por exemplo ${a + b}. Essa nova maneira de criar strings
 	te dá mais flexibilidade na hora de criar string complexas.
 
+*/
+
+const person = {
+	name: 'Zodiac Hasbro',
+	age: 	56
+};
+
+const greeting = `Hello, my name is ${person.name}!
+I am ${person.age} yers old.`;
+
+console.log(greeting);
+
+
+/*
+	Desafio
 	Use a sintaxe de template literal com crases para criar um array de strings
 	de elementos de lista (li). Analise a propriedade failure do objeto result.
 	O texto de cada elemento li deve ser um dos elementos contidos no array
@@ -47,16 +62,23 @@
 	  '<li class="text-warning">no-var</li>',
 	  '<li class="text-warning">var-on-top</li>',
 	  '<li class="text-warning">linebreak</li>'
-	]
+	]*/
 
-*/
-
-const person = {
-	name: 'Zodiac Hasbro',
-	age: 	56
+	// solucao 1
+	const result = {
+  success: ["max-length", "no-amd", "prefer-arrow-functions"],
+  failure: ["no-var", "var-on-top", "linebreak"],
+  skipped: ["no-extra-semi", "no-dup-keys"]
 };
+function makeList(arr) {
+  "use strict";
+  // change code below this line
+  const failureItems = [];
+  for (let i = 0; i < arr.length; i++) {
+    failureItems.push(`<li class="text-warning">${arr[i]}</li>`);
+  }
+  // change code above this line
+  return failureItems;
+}
 
-const greeting = `Hello, my name is ${person.name}!
-I am ${person.age} yers old.`;
-
-console.log(greeting);
+const failuresList = makeList(result.failure);
