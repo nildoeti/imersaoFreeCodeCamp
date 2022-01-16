@@ -64,21 +64,28 @@ console.log(greeting);
 	  '<li class="text-warning">linebreak</li>'
 	]*/
 
-	// solucao 1
 	const result = {
-  success: ["max-length", "no-amd", "prefer-arrow-functions"],
-  failure: ["no-var", "var-on-top", "linebreak"],
-  skipped: ["no-extra-semi", "no-dup-keys"]
-};
-function makeList(arr) {
-  "use strict";
-  // change code below this line
-  const failureItems = [];
-  for (let i = 0; i < arr.length; i++) {
-    failureItems.push(`<li class="text-warning">${arr[i]}</li>`);
-  }
-  // change code above this line
-  return failureItems;
-}
+		success: ["max-length", "no-amd", "prefer-arrow-functions"],
+		failure: ["no-var", "var-on-top", "linebreak"],
+		skipped: ["no-extra-semi", "no-dup-keys"]
+		};
 
-const failuresList = makeList(result.failure);
+	// exemplo 1
+	// function makeList(arr) {
+	// 	"use strict";
+	// 			const failureItems = [];
+	// 		for (let i = 0; i < arr.length; i++) {
+	// 			failureItems.push(`<li class="text-warning">${arra[i]}</li>`);
+	// 		}
+	// 		return failureItems;
+	// 	}
+	// const failureList = makeList(result.failure);
+
+	// exemplo 2
+	function makeList(arr) {
+		const failureItems = arr.map(item => `<li class="text-warning">${item}</li>`);
+		return failureItems;
+	}
+
+	const failureList = makeList(result.failure);
+	console.log(failureList);
