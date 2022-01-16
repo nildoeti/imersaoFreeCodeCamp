@@ -30,3 +30,20 @@
 
  // reescrita da funcao acima com nova sintaxe
  const getMousePosition = (x, y) => ({x, y});
+
+/*
+	Desafio
+	Use a abreviação de propriedade de objeto com literais de objeto para criar
+	e retornar um objeto com as propriedades name, age e gender.
+*/
+
+// const createPerson = (name, age, gender) => {
+// 	return {
+// 		name: name,
+// 		age: age,
+// 		gender: gender
+// 	};
+// };
+
+// abreviando as propriedades do desafio acima
+const createPerson = (name, age, gender) => ({name, age, gender});
