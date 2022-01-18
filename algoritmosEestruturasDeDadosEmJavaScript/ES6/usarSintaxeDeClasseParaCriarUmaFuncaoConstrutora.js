@@ -59,3 +59,21 @@ class Spaceshutle {
 var zeus = new Spaceshutle('Jupiter');
 console.log(zeus);
 
+
+/*
+	Desafio
+	Use a palavra-chave class e declare o método constructor para criar a
+	classe Vegetable.
+
+	A classe Vegetable permite criar um objeto vegetal com a propriedade name
+	que é passada ao constructor.
+*/
+
+class Vegetable {
+	constructor(name) {
+		this.name = name;
+	}
+}
+
+const carrot = new Vegetable('carrot');
+console.log(carrot);
