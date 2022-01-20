@@ -21,3 +21,11 @@
 
 // exemplo para module
 // <script type="module" src="filename.js"></script>
+
+/*
+	Desafio
+	Adicione uma tag script ao documento HTML do tipo module e dê a ela o 
+	caminho do arquivo index.js
+
+	<script type="module" scr="index.js"></script>
+*/
