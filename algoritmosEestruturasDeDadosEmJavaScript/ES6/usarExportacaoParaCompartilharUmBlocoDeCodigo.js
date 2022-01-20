@@ -43,6 +43,12 @@ const add2 = (x, y) => {
 export {add2}
 
 
+/*
+  Desafio
+  Há duas funções relacionadas a string no editor. Exporte ambas usando o
+  método de sua escolha.
+*/
 
-
-
+const uppercaseString = ( string) => {
+  return string.uppercaseString();
+}
