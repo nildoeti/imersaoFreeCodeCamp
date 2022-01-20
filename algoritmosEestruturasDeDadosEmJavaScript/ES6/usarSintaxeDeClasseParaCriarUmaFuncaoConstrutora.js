@@ -48,7 +48,6 @@
 // };
 // var zeus = new SpaceShutle('jupiter');
 
-
 // funcao construtora para ES6
 class Spaceshutle {
 	constructor(targetPlanet) {
@@ -56,9 +55,8 @@ class Spaceshutle {
 	}
 }
 
-var zeus = new Spaceshutle('Jupiter');
+var zeus = new Spaceshutle("Jupiter");
 console.log(zeus);
-
 
 /*
 	Desafio
@@ -75,5 +73,5 @@ class Vegetable {
 	}
 }
 
-const carrot = new Vegetable('carrot');
+const carrot = new Vegetable("carrot");
 console.log(carrot);
