@@ -25,3 +25,16 @@
 import * as myMathModule from "./usarExportacaoParaCompartilharUmBlocoDeCodigo.js";
 
 
+/*
+	Desafio
+
+	O código nesse desafio requer o conteúdo do arquivo: string_functions.js, o
+	qual está no mesmo diretório que o arquivo atual. Use a sintaxe import * as
+	para importar tudo do arquivo em um objeto chamado stringFunctions.
+*/
+
+import * as 'stringFunctions' from "./stringFunctions.js";
+
+stringFunctions.uppercaseString('Hello');
+stringFunctions.lowerCaseString('World');
+
