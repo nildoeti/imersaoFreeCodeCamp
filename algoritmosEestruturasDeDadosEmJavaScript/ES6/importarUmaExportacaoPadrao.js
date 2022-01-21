@@ -19,4 +19,12 @@
 import add from  "./math_functions.js";
 
 
+/*
+	No código a seguir, importe a exportação padrão do arquivo
+	math_functions.js encontrado no mesmo diretório do arquivo que foi usado
+	como exemplo. Dê a importação o nome subtract.
+*/
 
+
+import subtract from "./math_functions.js";
+subtract(4, 7);
