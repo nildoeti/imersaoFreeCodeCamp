@@ -49,6 +49,12 @@ export {add2}
   método de sua escolha.
 */
 
-const uppercaseString = ( string) => {
-  return string.uppercaseString();
+const uppercaseString = (string) => {
+  return string.uppercaseString;
 }
+
+const lowerCase = (string) => {
+  return string.lowerCase;
+}
+
+export{uppercaseString, lowerCase}
