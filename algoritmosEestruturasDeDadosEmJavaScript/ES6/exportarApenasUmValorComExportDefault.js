@@ -33,6 +33,17 @@
 // }
 
 // exemplo de função anônima
-export default function(x, y) {
-	return x + y;
+// export default function(x, y) {
+// 	return x + y;
+// }
+
+/*
+	Desafio
+	A função a seguir deve ser o único valor a ser exportado. Adicione o código
+	necessário para que apenas um valor seja exportado.
+*/
+
+export default function subtract(x, y) {
+	return x - y;
 }
+
