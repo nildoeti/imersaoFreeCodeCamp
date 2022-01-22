@@ -10,6 +10,12 @@
 	quando ela falhar. Ambos são métodos que recebem apenas um argumento, como
 	no exemplo abaixo.
 
+	Estados de uma promessas:
+	pending: pendente,
+	fulfiled: cumprida,
+	rejected: rejeitada
+
+
 	const myPromise = new Promise((resolve, reject) => {
 	  if(condition here) {
 	    resolve("Promise was fulfilled");
