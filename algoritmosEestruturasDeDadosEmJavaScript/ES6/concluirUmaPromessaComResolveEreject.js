@@ -30,3 +30,12 @@
 	usá-las em seu site ou em qualquer outro lugar.
 */
 
+// exemplo de aplicao para concluir promessas com resolve e reject
+const myPromise = new Promise( (resolve, reject) => {
+	if (myPromise) {
+		resolve('Promise was fulfilled');
+	} else {
+		reject('Promise was rejected');
+	}
+});
+
