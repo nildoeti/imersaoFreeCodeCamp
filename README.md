@@ -13,7 +13,7 @@ Repositório para atividades relacioadas as certificações pela Free Code Camp.
 
 ### Expressões regulares
 
-[Expressões regulares](), muitas vezes abreviadas como "regex" ou "regexp", são 
+[Expressões regulares](https://github.com/nildoeti/imersaoFreeCodeCamp/tree/main/algoritmosEestruturasDeDadosEmJavaScript/expressoesRegulares), muitas vezes abreviadas como "regex" ou "regexp", são 
 padrões que ajudam programadores a encontrar correspondências, pesquisar e 
 substituir texto. Expressões regulares são muito poderosas, mas podem ser 
 
