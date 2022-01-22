@@ -39,3 +39,23 @@ const myPromise = new Promise( (resolve, reject) => {
 	}
 });
 
+
+/*
+	Desafio
+
+	Adapte a promessa para ambas as situações de sucesso e fracasso. Se
+	responseFromServer for true, chame o método resolve para completar a
+	promessa com sucesso. Passe a string We got the data como argumento para o
+	método resolve. Se responseFromServer for false, passe a string Data not
+	received como argumento para o método reject.
+*/
+
+const makeServerRequest = new Promise( (resolve, reject) => {
+	let responseFromServer;
+
+	if (responseFromServer) {
+		resolve('We got the data');
+	} else {
+		reject('Data not received');
+	}
+});
