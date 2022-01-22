@@ -20,3 +20,11 @@ const myPromise = new Promise( (resolve, reject) => {});
 
 // exemplo 2
 const minhaPromessa = new Promise( (resolve, reject) => {});
+
+
+/*
+	Crie uma nova promessa chamada makeServerRequest. No construtor da promessa,
+	passe uma função com os parâmetros resolve e reject.
+*/
+
+const makeServerRequest = new Promise( (resolve, reject) => {});
