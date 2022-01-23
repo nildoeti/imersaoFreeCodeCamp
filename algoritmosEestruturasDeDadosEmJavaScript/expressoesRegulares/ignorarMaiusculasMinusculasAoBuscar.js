@@ -21,3 +21,13 @@ let fraseRegex = /Caixa/i;
 let result = fraseRegex.test(frase);
 console.log(result); // true
 
+/*
+	Desafio
+	Escreva uma regex fccRegex que encontre freeCodeCamp, não importa em que
+	caixa esteja. A regex não deve buscar abreviações ou variações com espaços.
+*/
+
+let myString = 'freeCodeCamp';
+let fccRegex = /freeCodeCamp/i;
+let result2 = fccRegex.test(myString);
+console.log(result2); // true
