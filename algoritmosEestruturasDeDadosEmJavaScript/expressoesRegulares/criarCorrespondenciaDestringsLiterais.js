@@ -33,3 +33,17 @@ let wrongRegex2 = /kevin/; // k, minsculo
 let resul2 = wrongRegex2.test(testStr);
 console.log(resul2); // false
 
+
+/*
+	Complete a regex waldoRegex para encontrar "Waldo" na string waldoIsHiding
+	de forma literal.
+*/
+
+let waldoIsHiding = 'Somewhere Waldo is hiding in this text.';
+// antes
+// let waldoRegex = /search/;
+
+// depois
+let waldoRegex = /Waldo/;
+let result3 = waldoRegex.test(waldoIsHiding);
+console.log(result3);
