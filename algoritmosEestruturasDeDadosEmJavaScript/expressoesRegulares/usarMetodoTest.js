@@ -26,7 +26,7 @@ let testRegex = /Code/;
 testRegex.test(testStr);
 console.log(testRegex); // /code/
 console.log(testRegex.test(testStr)); // true
-
+console.log(test('free'))
 
 /*
 	Desafio
