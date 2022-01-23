@@ -28,4 +28,15 @@ console.log(testRegex); // /code/
 console.log(testRegex.test(testStr)); // true
 
 
+/*
+	Desafio
+	Aplique a regex myRegex na string myString usando o método .test().
+*/
 
+
+let myString = 'Hello World';
+let myRegex = /Hello/;
+
+// let result = myRegex;  // antes
+let result = myRegex.test(myString) // depois
+console.log(result); true
