@@ -29,3 +29,18 @@ console.log(result);
 let repeatRegex = /Repeat/g; // pega todos os resultados
 let result2 = testStr.match(repeatRegex);
 console.log(result2);
+
+/*
+	Desafio
+	Usando a regex starRegex, encontre e extraia ambas ocorrências da palavra
+	Twinkle da string twinkleStar.
+
+	Observação:
+	você pode usar múltiplas flags em uma regex: /search/gi
+*/
+
+let twinkleStar = 'Twinkle, twinkle, little star';
+let starRegex = /Twinkle/gi;
+let resul3 = twinkleStar.match(starRegex);
+console.log(resul3);
+
