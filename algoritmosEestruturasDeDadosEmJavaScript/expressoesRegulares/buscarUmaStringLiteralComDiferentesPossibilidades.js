@@ -18,8 +18,18 @@
 	padrão desejado: /yes|no|maybe/.
 */
 
+// exemplo 1
 let mystring = 'Single and Double Quotes in JavaScript Strings';
 let mySearch = /and|in/;
 let result = mySearch.test(mySearch);
-console.log(result);
+console.log(result); // true
 
+/*
+	Desafio
+	Complete a regex petRegex para encontrar os pets dog, cat, bird, ou fish.
+*/
+
+let petString = 'James has a pet cat';
+let petRegex = /dog | cat | bird | fish/;
+let result2 = petRegex.test(petString);
+console.log(result2); // false
