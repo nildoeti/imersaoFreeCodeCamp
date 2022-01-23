@@ -31,3 +31,17 @@ let ourRegex = /regular/i;
 let result = ourStr.match(ourRegex);
 console.log(result);
 
+/*
+	Desafio
+	Aplique o método .match() para extrair a string coding.
+*/
+
+let extractStr = "Extract the word 'coding' from this string.";
+// antes
+// let codingRegex = /change/;
+// let result2 = extractStr; 
+
+// depois
+let codingRegex = /coding/;
+let result2 = extractStr.match(codingRegex);
+console.log(result2)
