@@ -44,3 +44,17 @@ console.log(result1); // big
 console.log(result2); // bag
 console.log(result3); // bug
 console.log(result4); // null
+
+
+/*
+	Use classe de caracteres de vogais (a, e, i, o, u) na sua regex vowelRegex
+	para encontrar todas as vogais na string quoteSample.
+
+	Observação: você quer encontrar tanto maiúsculas quanto minúsculas.
+*/
+
+let quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
+// let vowelRegex = /change/; // Altere esta linha
+let vowelRegex = /b[aeiou]/gi;
+let result5 = quoteSample.match(vowelRegex); // Altere esta linha
+console.log(result5);
