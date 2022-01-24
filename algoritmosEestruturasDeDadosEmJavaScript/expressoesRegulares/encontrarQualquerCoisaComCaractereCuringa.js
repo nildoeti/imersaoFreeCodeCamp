@@ -33,4 +33,14 @@ console.log(result1); // true
 console.log(result2); // true
 
 
+/*
+	Complete a regex unRegex para que ela encontre as strings
+	run, sun, fun, pun, nun e bun.
+	A regex deve usar o caractere curinga.
+*/
 
+let exempleStr = "Let's have fun with regular expressions!";
+let unRegex2 = /un./;
+
+const result3 = unRegex2.test(exempleStr);
+console.log(result3); // true
