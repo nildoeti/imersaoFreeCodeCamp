@@ -23,3 +23,14 @@ let myStringRegex = /[+a]/gi;
 let myStringResult = myString.match(myStringRegex);
 console.log(myStringResult); // [ 'a', 'a' ]
 
+/*
+	Você quer capturar as ocorrências de s quando acontecer uma ou mais vezes
+	em Mississippi. Escreva uma regex que use o caractere +.
+*/
+
+let difficultSpelling = "Mississippi";
+// let myRegex = /change/; // Altere esta linha
+let myRegex = /[+s]/gi;
+let result = difficultSpelling.match(myRegex);
+console.log(result); // [ 's', 's', 's', 's' ]
+
