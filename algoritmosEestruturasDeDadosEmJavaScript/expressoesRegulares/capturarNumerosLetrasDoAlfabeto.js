@@ -21,3 +21,8 @@ let jennyStr = 'Jenny8675309';
 let myRegex = /[a-z0-0]ig/;
 let resultJenny = jennyStr.match(myRegex);
 console.log(resultJenny);
+
+// exemplo 2
+let user01 = 'WebStacl008';
+let user01Regex = /[a-z0-9]gi/;
+let user01Result = user01.match(user01Regex);
