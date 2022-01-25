@@ -34,4 +34,14 @@ console.log(myStringResult);
 
 */
 
+// exemplo 2
+let myStringRegex2 = /[^a-z]/gi;
+let myStringResult2 = myString.match(myStringRegex2);
+console.log(myStringResult2 );
+
+/*
+	Resultado para exemplo 2
+	[ ' ', ' ', 'ã', ' ' ]
+
+*/
 
