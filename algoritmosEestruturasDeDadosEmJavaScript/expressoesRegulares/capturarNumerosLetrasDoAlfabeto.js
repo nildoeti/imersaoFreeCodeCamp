@@ -27,3 +27,16 @@ let user01 = 'WebStacl008';
 let user01Regex = /[a-z0-9]gi/;
 let user01Result = user01.match(user01Regex);
 console.log(user01Result);
+
+/*
+	Escreva uma única regex que encontra letras entre h e s e, também, números
+	entre 2 e 6. Lembre-se de incluir as flags necessárias na regex.
+*/
+
+let quoteSample = "Blueberry 3.141592653s are delicious.";
+// let myRegex = /change/; // Altere esta linha
+// let result = myRegex; // Altere esta linha
+
+let myRegex2 = /[h-s2-6]/gi;
+let result = quoteSample.match(myRegex2);
+console.log(result);
