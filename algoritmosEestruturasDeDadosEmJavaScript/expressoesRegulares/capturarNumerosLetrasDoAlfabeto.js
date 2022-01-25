@@ -26,3 +26,4 @@ console.log(resultJenny);
 let user01 = 'WebStacl008';
 let user01Regex = /[a-z0-9]gi/;
 let user01Result = user01.match(user01Regex);
+console.log(user01Result);
