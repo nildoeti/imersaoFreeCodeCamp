@@ -39,3 +39,18 @@ console.log(result1);
 console.log(result2);
 console.log(result3);
 
+/*
+	Desafio
+	Capture todas as letras na string quoteSample.
+	Observação: você quer encontrar tanto maiúsculas quanto minúsculas.
+*/
+
+let quoteSample = "The quick brown fox jumps over the lazy dog.";
+// let alphabetRegex = //; // Altere esta linha
+// let quoteRegex = alphabetRegex; // Altere esta linha
+
+// linhas alteradas
+let alphabetRegex = /[a-z]gi/;
+let resul4 = quoteSample.match(alphabetRegex);
+
+console.log(resul4);
