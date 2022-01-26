@@ -44,3 +44,20 @@ console.log(result3); // ti
 let myRegex4 = /t[a-z]*?i/;
 let result4 = myString2.match(myRegex4);
 console.log(result4); // ti
+
+
+/*
+	Desafio
+
+	Arrume a regex /<.*>/ para que retorne a tag HTML <h1> mas não a linha
+	"<h1>Winter is coming</h1>". Lembre-se de que o caractere curinga . em uma
+	expressão regular captura qualquer caractere.
+*/
+
+let text = "<h1>Winter is coming</h1>";
+// let myRegex = /<.*>/; // Altere esta linha
+let myRegex5 = /<.*?>/gi;
+let result5 = text.match(myRegex5);
+console.log(result5); // [ '<h1>', '</h1>' ]
+
+
