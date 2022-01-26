@@ -29,5 +29,7 @@ let myRegex1 = /t[a-z]*i/;
 let result1 = myString.match(myRegex1);
 console.log(result1); // titani
 
-
-
+// exemplo 2
+let myRegex2 = /t[a-z]*?i/;
+let result2 = myString.match(myRegex2);
+console.log(result2); // ti
