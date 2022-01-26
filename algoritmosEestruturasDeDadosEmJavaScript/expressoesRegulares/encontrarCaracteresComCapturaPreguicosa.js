@@ -33,3 +33,9 @@ console.log(result1); // titani
 let myRegex2 = /t[a-z]*?i/;
 let result2 = myString.match(myRegex2);
 console.log(result2); // ti
+
+// exemplo 3
+let myString2 = 'multilaser';
+let myRegex3 = /t[a-z]*i/;
+let result3 = myString2.match(myRegex3);
+console.log(result3);
