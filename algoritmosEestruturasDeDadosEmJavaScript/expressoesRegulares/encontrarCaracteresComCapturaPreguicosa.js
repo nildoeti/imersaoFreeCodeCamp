@@ -38,4 +38,9 @@ console.log(result2); // ti
 let myString2 = 'multilaser';
 let myRegex3 = /t[a-z]*i/;
 let result3 = myString2.match(myRegex3);
-console.log(result3);
+console.log(result3); // ti
+
+// exemplo 4
+let myRegex4 = /t[a-z]*?i/;
+let result4 = myString2.match(myRegex4);
+console.log(result4); // ti
