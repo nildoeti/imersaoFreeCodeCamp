@@ -22,3 +22,16 @@ let spaceRegex = /\s/g;
 
 console.log(whiteSpace.match(spaceRegex)); // [ ' ', ' ' ]
 
+
+/*
+	Desafio
+	Mude a regex countWhiteSpace para que capture múltiplos espaços em branco
+	em strings.
+*/
+
+let sample = "Whitespace is important in separating words";
+// let countWhiteSpace = /change/; // Altere esta linha
+let countWhiteSpace = /\s/g; // Altere esta linha
+let result = sample.match(countWhiteSpace);
+console.log(result); // [ ' ', ' ', ' ', ' ', ' ' ]
+
