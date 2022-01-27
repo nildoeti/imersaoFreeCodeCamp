@@ -38,3 +38,16 @@ let notFirstTestThree = notFirst.match(firstRegex);
 
 console.log(notFirstTestTwo); // null
 console.log(notFirstTestThree);
+
+
+/*
+	Desafio
+	Use o circunflexo em uma regex para encontrar Cal, mas apenas no começo da
+	string rickyAndCal.
+*/
+
+let rickyAndCal = "Cal and Ricky both like racing.";
+// let calRegex = /change/; // Altere esta linha
+let calRegex = /^Cal/;
+let result = calRegex.test(rickyAndCal);
+console.log(result); // true
