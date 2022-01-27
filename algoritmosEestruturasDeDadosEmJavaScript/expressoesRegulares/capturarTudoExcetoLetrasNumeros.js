@@ -27,3 +27,16 @@ let sentence = 'Coding!';
 console.log(numbers.match(shortHand)); // [ '%' ]
 console.log(numbersTwo.match(shortHand)); // null
 console.log(sentence.match(shortHand)); // [ '!' ]
+
+
+/*
+	Desafio
+	Use o atalho \W para contar o número de caracteres não alfanuméricos em
+	várias strings.
+*/
+
+let quoteSample = "The five boxing wizards jump quickly.";
+// let nonAlphabetRegex = /change/; // Altere esta linha
+let nonAlphabetRegex = /\W/g;
+let result = quoteSample.match(nonAlphabetRegex).length;
+console.log(result);
