@@ -29,7 +29,7 @@
 let crim = 	"abczZzzzzzzzzzzzzzzzzzzzzabc";
 let crimRegex = /Z+/gi; // retorna todos os com letra: zZ
 let result = crim.match(crimRegex);
-console.log(result); [ 'zZzzzzzzzzzzzzzzzzzzzz' ]
+console.log(result); [ 'zZzzzzzzzzzzzzzzzzzzzz' ];
 
 
 /*
@@ -41,5 +41,5 @@ console.log(result); [ 'zZzzzzzzzzzzzzzzzzzzzz' ]
 let criminal = 'abcCcccdefg'
 let reCriminal = /C+/gi;
 let resultCrim = criminal.match(reCriminal);
-console.log(resultCrim); [ 'cCccc' ]
+console.log(resultCrim); // [ 'cCccc' ];
 
