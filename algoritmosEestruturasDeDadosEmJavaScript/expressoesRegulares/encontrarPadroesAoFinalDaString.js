@@ -28,3 +28,12 @@ let notEndingResult = storyRegex.test(notEnding);
 console.log(notEndingResult); // false
 
 
+/*
+	Desafio
+	Use o cifrão ($) para capturar a string caboose no fim da string caboose.
+*/
+
+onsole.log(result); // true
+let caboose = "The last car on a train is the caboose";
+let lastRegex = /caboose$/; // Altere esta linha
+let result = lastRegex.test(caboose);
