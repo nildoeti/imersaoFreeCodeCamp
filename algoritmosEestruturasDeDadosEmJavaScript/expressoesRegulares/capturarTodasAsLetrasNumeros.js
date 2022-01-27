@@ -37,3 +37,16 @@ console.log(shortHand.test(numbers)); // true
 // testa strings
 console.log(longHand.test(numbers)); // true
 console.log(shortHand.test(varNames)); // true
+
+
+
+/*
+	Desafio
+	Use o atalho \w para contar o número de caracteres alfanuméricos em
+	várias strings.
+*/
+
+let quoteSample = "The five boxing wizards jump quickly.";
+let alphabetRegexV2 = /\w/gi; // Altere esta linha
+let result = quoteSample.match(alphabetRegexV2).length;
+console.log(result); // 31
