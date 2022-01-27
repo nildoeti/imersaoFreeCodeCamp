@@ -31,3 +31,11 @@ let crimRegex = /Z+/gi; // retorna todos os com letra: zZ
 let result = crim.match(crimRegex);
 console.log(result);
 
+
+/*
+	Desafio
+	Escreva uma regex gananciosa que encontra uma ou mais criminosos em um
+	grupo de pessoas. Um criminoso pode ser identificado pela letra maiúscula C.
+*/
+// let reCriminals = /./; // Altere esta linha
+let reCriminal = /C+/;
