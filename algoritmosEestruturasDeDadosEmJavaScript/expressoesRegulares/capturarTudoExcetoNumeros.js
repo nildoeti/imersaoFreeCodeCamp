@@ -15,3 +15,16 @@ let myString = 'year 2001';
 let myRegex = /\D/g;
 
 console.log(myString.match(myRegex)); // [ 'y', 'e', 'a', 'r', ' ' ]
+
+
+/*
+	Desafio
+	Use o atalho \D para contar quantos não dígitos existem em títulos de
+	filmes.
+*/
+
+let movieName = "2001: A Space Odyssey";
+// let noNumRegex = /change/; // Altere esta linha
+let noNumRegex = /\D/g;
+let result = movieName.match(noNumRegex).length;
+console.log(result); // 17
