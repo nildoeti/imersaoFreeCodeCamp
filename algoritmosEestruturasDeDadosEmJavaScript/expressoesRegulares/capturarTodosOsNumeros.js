@@ -11,9 +11,11 @@
 
 let myString = 'ano 2001';
 let myRegex = /\d/g;
+let myStringResult = myString.match(myRegex).length;
 
 console.log(myRegex.test(myString)); // true
 console.log(myString.match(myRegex)); // [ '2', '0', '0', '1' ]
+console.log(myStringResult); // 4
 /*
 	Desafio
 	Use o atalho \d para contar quantos dígitos existem em títulos de filmes.
