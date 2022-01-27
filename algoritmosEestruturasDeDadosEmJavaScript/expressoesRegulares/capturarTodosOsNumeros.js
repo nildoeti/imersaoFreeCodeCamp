@@ -14,4 +14,14 @@ let myRegex = /\d/g;
 
 console.log(myRegex.test(myString)); // true
 console.log(myString.match(myRegex)); // [ '2', '0', '0', '1' ]
+/*
+	Desafio
+	Use o atalho \d para contar quantos dígitos existem em títulos de filmes.
+	Números por extenso, como "seis" em vez de 6, não contam.
+*/
 
+let movieName = "2001: A Space Odyssey";
+// let numRegex = /change/; // Altere esta linha
+let numRegex = /\d/g;
+let result = movieName.match(numRegex).length;
+console.log(result); // 4
