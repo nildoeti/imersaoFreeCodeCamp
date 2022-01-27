@@ -1,0 +1,39 @@
+/*
+	Capturar todas as letras e números
+
+	Ao escrever [a-z] você foi capaz de capturar todas as letras do alfabeto.
+	Essa classe de caracteres é tão comum que existe uma forma reduzida de
+	escrevê-la. Mas essa forma inclui alguns caracteres a mais.
+
+	Em JavaScript, você pode usar \w para capturar todas as letras do alfabeto.
+	Isso é equivalente à classe de caracteres [A-Za-z0-9_]. Ela captura números
+	e letras, tanto maiúsculas quanto minúsculas. Note que o underline (_)
+	também é incluído nela.
+
+	let longHand = /[A-Za-z0-9_]+/;
+	let shortHand = /\w+/;
+	let numbers = "42";
+	let varNames = "important_var";
+	longHand.test(numbers);
+	shortHand.test(numbers);
+	longHand.test(varNames);
+	shortHand.test(varNames);
+
+	As quatro chamadas a test retornam true.
+
+	Essas formas reduzidas de classes de caracteres podem ser chamadas de
+	atalhos.
+*/
+
+let longHand = /[A-Za-z0-9]/;
+let shortHand = /\w+/;
+let numbers = '42';
+let varNames = 'important_var';
+
+// testa numeros
+console.log(longHand.test(numbers)); // true
+console.log(shortHand.test(numbers)); // true
+
+// testa strings
+console.log(longHand.test(numbers)); // true
+console.log(shortHand.test(varNames)); // true
