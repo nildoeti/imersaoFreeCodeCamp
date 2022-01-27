@@ -1,0 +1,1 @@
+encontrarPadroesAoFinalDaString.js
