@@ -43,5 +43,18 @@ console.log(result);
 
 */
 
+const userCheckTwo= /^[a-z]([0-9]{2,}|[a-z]+\d*)$/i;
+let resultTwo = userCheckTwo.test(username);
+console.log(resultTwo);
 
+/*
+	Explicação do código
 
+	     ^ - início da entrada
+	     [a-z] - o primeiro caractere é uma letra
+	     [0-9]{2,0} - termina com dois ou mais números | - ou
+	     [a-z]+ - tem uma ou mais letras ao lado
+	     \d* - e termina com zero ou mais números
+	     $ - fim da entrada
+	     i - ignora maiúsculas e minúsculas de entrada 
+*/
