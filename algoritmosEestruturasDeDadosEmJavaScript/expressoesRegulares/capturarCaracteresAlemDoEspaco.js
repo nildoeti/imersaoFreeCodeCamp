@@ -35,3 +35,27 @@ console.log(whiteSpace.match(nonSpaceRegex));
 */
 
 
+/*
+	Desafio
+	Modifique a regex countNonWhiteSpace para que encontre tudo exceto espaços
+	em branco em uma string.
+*/
+
+let sample = "Whitespace is important in separating words";
+// let countNonWhiteSpace = /change/; // Altere esta linha
+let countNonWhiteSpace = /\S/g; // Altere esta linha
+let result = sample.match(countNonWhiteSpace);
+console.log(result);
+
+/*
+	Saida para sample.match(countNonWhiteSpace)
+	[
+	  'W', 'h', 'i', 't', 'e', 's', 'p',
+	  'a', 'c', 'e', 'i', 's', 'i', 'm',
+	  'p', 'o', 'r', 't', 'a', 'n', 't',
+	  'i', 'n', 's', 'e', 'p', 'a', 'r',
+	  'a', 't', 'i', 'n', 'g', 'w', 'o',
+	  'r', 'd', 's'
+	]
+
+*/
