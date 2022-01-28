@@ -36,3 +36,11 @@ let repeatRegex = /(\w+) \1 \1/gi;
 
 console.log(repeatRegex.test(repeatStr)); // Returns true
 console.log(repeatStr.match(repeatRegex)); // Returns ["row row row", "row"]
+
+/*
+	Desafio
+	Use grupos de captura na regex reRegex para capturar em uma string um número que aparece exatamente três vezes, separados por espaços.
+*/
+let repeatNum = "42 42 42";
+let reRegex = /change/; // Altere esta linha
+let result = reRegex.test(repeatNum);
