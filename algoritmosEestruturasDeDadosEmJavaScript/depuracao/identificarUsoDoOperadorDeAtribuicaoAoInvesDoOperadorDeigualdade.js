@@ -34,10 +34,42 @@
 */
 
 // exempplo 1
-let x = 1;
-let y = 2;
-if (x = y) {
-	console.log(true); // true
+// let x = 1;
+// let y = 2;
+// if (x = y) {
+// 	console.log(true); // true
+// } else {
+// 	console.log(false);
+// }
+
+/*
+	Desafio
+	Corrija a condição para que o programa rode na ramificação correta e o
+	valor apropriado seja atribuído a result.
+*/
+
+// antes
+// let x = 7;
+// let y = 9;
+// let result = "to come";
+
+// if(x = y) {
+//   result = "Equal!";
+// } else {
+//   result = "Not equal!";
+// }
+
+// console.log(result);
+
+// depois
+let x = 7;
+let y = 9;
+let result = "to come";
+
+if(x == y) {
+  result = "Equal!";
 } else {
-	console.log(false);
+  result = "Not equal!";
 }
+
+console.log(result);
