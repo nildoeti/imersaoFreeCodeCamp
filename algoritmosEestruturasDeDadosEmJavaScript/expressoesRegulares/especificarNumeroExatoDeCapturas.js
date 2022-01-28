@@ -32,3 +32,11 @@ console.log(multipleHA.test(A3)); // true
 console.log(multipleHA.test(A100)); // false
 
 
+/*
+	Modifique a regex timRegex para que capture quatro ms na string Timber.
+*/
+
+let timStr = "Timmmmber";
+let timRegex = /Tim{4}er/; // Altere esta linha
+let result = timRegex.test(timStr);
+console.log(result); // false
