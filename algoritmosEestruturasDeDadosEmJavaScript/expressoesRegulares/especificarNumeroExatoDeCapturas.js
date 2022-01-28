@@ -31,3 +31,4 @@ console.log(multipleHA.test(A4)); // false
 console.log(multipleHA.test(A3)); // true
 console.log(multipleHA.test(A100)); // false
 
+
