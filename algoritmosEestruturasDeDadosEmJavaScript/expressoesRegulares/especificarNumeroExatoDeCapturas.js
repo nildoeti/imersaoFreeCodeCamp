@@ -1,0 +1,1 @@
+especificarNumeroExatoDeCapturas.js
