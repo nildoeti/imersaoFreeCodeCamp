@@ -31,3 +31,16 @@ console.log(multipleA.test(A4)); // true
 console.log(multipleA.test(A2)); // false
 console.log(A4.match(multipleA)); // [ 'aaaah' ]
 console.log(A2.match(multipleA)); // null
+
+
+/*
+	Desadio
+	Altere a regex ohRegex para que capture a frase Oh no, mas apenas quando
+	nela houver de 3 a 6 letras h's.
+*/
+
+let ohStr = "Ohhh no";
+// let ohRegex = /change/; // Altere esta linha
+let ohRegex = /Oh{3,6}\sno/;
+let result = ohRegex.test(ohStr);
+console.log(result); // true
