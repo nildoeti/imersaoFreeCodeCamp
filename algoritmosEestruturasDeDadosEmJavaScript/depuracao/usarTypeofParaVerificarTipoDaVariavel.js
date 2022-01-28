@@ -23,9 +23,6 @@
 	Null, Undefined, Number, String e Symbol (novo em ES6) e um tipo para itens
 	mutáveis: Object. Note que em JavaScript, arrays são tecnicamente um tipo
 	de objeto.
-
-	Adicione duas instruções console.log() para verificar o typeof de cada uma
-	das duas variáveis seven e three no código.
 */
 
 // exemplo de uso para typeof
@@ -33,3 +30,16 @@ console.log(typeof('')); // string
 console.log(typeof(0)); // number
 console.log(typeof([])); // object
 console.log(typeof({})); // object
+
+/*
+	Desafio
+	Adicione duas instruções console.log() para verificar o typeof de cada uma
+	das duas variáveis seven e three no código.
+*/
+
+let seven = 7;
+let three = "3";
+console.log(seven + three); // 73
+// Altere apenas o código abaixo desta linha
+console.log(typeof(seven)); // number
+console.log(typeof(three)); // string
