@@ -48,3 +48,38 @@ for (let k = 0; k < len; k++) {
 	console.log(alphabet[k]);
 }
 
+
+
+/*
+	Desafio
+
+	Corrija os dois erros de índices nas funções seguintes para que todos os
+	números de 1 até 5 sejam exibidos no console.
+*/
+
+// Antes
+// function countToFive() {
+//   let firstFive = "12345";
+//   let len = firstFive.length;
+//   // Altere apenas o código abaixo desta linha
+//   for (let i = 1; i <= len; i++) {
+//   // Altere apenas o código acima desta linha
+//     console.log(firstFive[i]);
+//   }
+// }
+
+// countToFive();
+
+
+// Depois
+function countToFive() {
+  let firstFive = "12345";
+  let len = firstFive.length;
+  // Altere apenas o código abaixo desta linha
+  for (let i = 0; i < len; i++) {
+  // Altere apenas o código acima desta linha
+    console.log(firstFive[i]);
+  }
+}
+
+countToFive();
