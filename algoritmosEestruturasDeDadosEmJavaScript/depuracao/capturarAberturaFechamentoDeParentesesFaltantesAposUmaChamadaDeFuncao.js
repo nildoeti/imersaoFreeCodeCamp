@@ -29,3 +29,29 @@ function myFunction() {
 let varOne = myFunction; // varOne é a função myFunction
 let varTwo = myFunction(); // varTwo é a string You rock!
 
+
+
+/*
+	Corrija o código para que a variável result seja definida para o valor
+	retornado da chamada da função getNine.
+*/
+
+// antes
+// function getNine() {
+//   let x = 6;
+//   let y = 3;
+//   return x + y;
+// }
+
+// let result = getNine;
+// console.log(result);
+
+// depois
+function getNine() {
+  let x = 6;
+  let y = 3;
+  return x + y;
+}
+
+let result = getNine(); // uso de (), para retorno da funcao
+console.log(result);
