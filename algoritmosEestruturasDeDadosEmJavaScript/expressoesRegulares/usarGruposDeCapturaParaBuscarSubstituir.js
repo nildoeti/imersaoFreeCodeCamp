@@ -27,5 +27,8 @@
 let wrongText = 'The sky is silver.';
 let silverRegex = /silver/;
 
-console.log('Antes: ', wrongText);
-console.log('Depois: ', wrongText.replace(silverRegex, 'blue'));
+console.log('Antes: ', wrongText); // The sky is silver.
+console.log('Depois: ', wrongText.replace(silverRegex, 'blue')); // The sky is blue.
+
+// exemplo 2
+console.log("Code Camp".replace(/(\w+)\s(\w+)/, '$2 $1')); // Camp Code
