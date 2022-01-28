@@ -42,3 +42,15 @@ let myTextResultTwo = myText.match(myRegex);
 
 console.log(myTextResult);
 console.log(myTextResultTwo);
+
+
+/*
+	Desafio
+	Modifique a regex haRegex para que capture quatro ou mais zs na string 
+	Hazzah.
+*/
+
+let haStr = "Hazzzzah";
+let haRegex = /Haz{4,}ah/; // Altere esta linha
+let result = haRegex.test(haStr);
+console.log(result); // true
