@@ -42,5 +42,7 @@ console.log(repeatStr.match(repeatRegex)); // Returns ["row row row", "row"]
 	Use grupos de captura na regex reRegex para capturar em uma string um número que aparece exatamente três vezes, separados por espaços.
 */
 let repeatNum = "42 42 42";
-let reRegex = /change/; // Altere esta linha
+// let reRegex = /change/; // Altere esta linha
+let reRegex = /^(\d+)\s\1\s\1$/;
 let result = reRegex.test(repeatNum);
+
