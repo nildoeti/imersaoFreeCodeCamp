@@ -29,3 +29,14 @@ let rainbowRegex = /colo?r/;
 console.log(rainbowRegex.test(american)); // true
 console.log(rainbowRegex.test(british)); // false
 
+
+/*
+	Altere a regex favRegex para encontrar as versões americana (favorite) e
+	britânica (favourite) da palavra.
+*/
+
+let favWord = "favorite";
+// let favRegex = /change/; // Altere esta linha
+let favRegex = /favou?rite/;
+let result = favRegex.test(favWord);
+console.log(result); // true
