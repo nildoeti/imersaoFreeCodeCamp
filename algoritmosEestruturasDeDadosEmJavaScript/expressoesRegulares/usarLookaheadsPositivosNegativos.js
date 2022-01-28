@@ -60,3 +60,16 @@ let password = "abc123";
 let checkPass = /(?=\w{3,6})(?=\D*\d)/;
 let passwordResult = checkPass.test(password);
 console.log(passwordResult); // true
+
+
+/*
+	Desafio
+	Use os lookaheads na pwRegex para que correspondam a senhas de mais de 5
+	caracteres e que tenham dois algarismos consecutivos.
+*/
+let sampleWord = "astronaut";
+// let pwRegex = /change/; // Altere esta linha
+let pwRegex =  /(?=\w{6})(?=\w*\d{2})/;
+let result = pwRegex.test(sampleWord);
+console.log(result); // false
+
