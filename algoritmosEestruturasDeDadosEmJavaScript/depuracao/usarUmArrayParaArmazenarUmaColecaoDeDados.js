@@ -74,3 +74,13 @@ let complexArray = [
 	]
 ];
 
+
+/*
+	Desafio
+	Definimos uma variável chamada yourArray. Complete a instrução atribuindo
+	um array de pelo menos 5 elementos de comprimento à variável yourArray. Seu
+	array deve conter pelo menos uma string, um número e um booleano.
+*/
+
+let yourArray = ["a", 2, true, "c", null, { name: "john" }];
+
