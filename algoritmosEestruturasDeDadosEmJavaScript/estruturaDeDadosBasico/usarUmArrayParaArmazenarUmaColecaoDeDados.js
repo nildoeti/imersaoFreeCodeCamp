@@ -47,7 +47,7 @@ let complexArray = [
 */
 
 // exemplo 1 para array simples
-let simpleArray = ['one', 2, 'three', true, false, undefined, null];
+let simpleArray = ["one", 2, "three", true, false, undefined, null];
 console.log(simpleArray.length); // 7
 
 // exemplo de array multidimensional
@@ -55,25 +55,24 @@ let complexArray = [
 	[
 		{
 			one: 1,
-			two: 2
+			two: 2,
 		},
 		{
 			three: 3,
-			four: 4
-		}
+			four: 4,
+		},
 	],
 	[
 		{
-			a: 'a',
-			b: 'b'
+			a: "a",
+			b: "b",
 		},
 		{
-			c: 'c',
-			d: 'd'
-		}
-	]
+			c: "c",
+			d: "d",
+		},
+	],
 ];
-
 
 /*
 	Desafio
@@ -83,5 +82,3 @@ let complexArray = [
 */
 
 let yourArray = ["a", 2, true, "c", null, { name: "john" }];
-
- 
