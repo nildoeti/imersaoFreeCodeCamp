@@ -48,3 +48,14 @@ console.log(ourVariable); // a
 ourArray[1] = 'not b anymore';
 console.log(ourArray); // [ 'a', 'not b anymore', 'c' ]
 
+/*
+	Desafio
+	A fim de concluir esse desafio, defina a segunda posição (index 1) do
+	myArray como qualquer coisa que deseje, exceto a letra b.
+*/
+
+let myArray = ["a", "b", "c", "d"];
+// Altere apenas o código abaixo desta linha
+myArray[1] = 'e';
+// Altere apenas o código acima desta linha
+console.log(myArray);
