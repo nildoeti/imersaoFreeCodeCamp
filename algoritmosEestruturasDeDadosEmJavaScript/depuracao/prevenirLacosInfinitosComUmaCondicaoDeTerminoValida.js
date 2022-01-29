@@ -34,3 +34,27 @@
 	//   }
 	// }
 
+
+/*
+	Desafio
+	A função myFunc() contém um laço infinito porque a condição de parada
+	i != 4 nunca será false (para, então, quebrar o laço) - i vai incrementar
+	em 2 a cada iteração, e passa direto por 4 já que i é ímpar no início.
+	Corrija o operador de comparação para que o laço só rode enquanto i for
+	menor ou igual a 4.
+*/
+
+// antes
+// function myFunc() {
+//   for (let i = 1; i != 4; i += 2) {
+//     console.log("Still going!");
+//   }
+// }
+
+// depois
+function myFunc() {
+  for (let i = 1; i <= 4; i += 2) {
+    console.log("Still going!");
+  }
+}
+myFunc();
