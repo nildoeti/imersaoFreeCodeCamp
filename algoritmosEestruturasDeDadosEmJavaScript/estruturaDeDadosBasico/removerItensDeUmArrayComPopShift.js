@@ -30,7 +30,7 @@
 
 */
 
-// exemplo 1
+// exemplo 1 pop()
 let greetings = ['whats up?', 'hello', 'see ya!'];
 console.log('Antes: ', greetings); // Antes:  [ 'whats up?', 'hello', 'see ya!' ]
 
@@ -40,3 +40,7 @@ console.log('Depois: ', greetings); // Depois:  [ 'whats up?', 'hello' ]
 let popped = greetings.pop();
 console.log(popped); // hello
 console.log(greetings); // [ 'whats up?' ]
+
+// exemplo 2 shift
+greetings.shift();
+console.log(greetings)
