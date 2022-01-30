@@ -36,3 +36,21 @@ numbers.splice(startIndex, amountToDelete, 13, 14);
 // (13, 14) serão inseridos com início no mesmo índice
 console.log(numbers); // [ 10, 11, 12, 13, 14, 13 ];
 
+/*
+	Desafio
+	Definimos uma função, htmlColorNames, a qual recebe um array de cores HTML
+	como argumento. Modifique a função usando splice() para remover os dois
+	primeiros elementos do array e adicionar 'DarkSalmon' e 'BlanchedAlmond' em
+	seus respectivos lugares.
+*/
+
+function htmlColorNames(arr) {
+  // Altere apenas o código abaixo desta linha
+  let startColor = 0;
+  let amountColor = 2;
+  arr.splice(startColor, amountColor, 'DarkSalmon', 'BlanchedAlmond');
+  // Altere apenas o código acima desta linha
+  return arr;
+}
+
+console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurquoise', 'FireBrick']));
