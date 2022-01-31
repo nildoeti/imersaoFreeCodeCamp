@@ -40,12 +40,18 @@ console.log(fruits.indexOf('pears')); // 1
 */
 
 // exemplo 1
-function quickCheck(arr, elem) {
-	if (arr.indexOf(elem) >= 0) {
-		return true;
-	} else {
-		return false;
-	}
-}
+// function quickCheck(arr, elem) {
+// 	if (arr.indexOf(elem) >= 0) {
+// 		return true;
+// 	} else {
+// 		return false;
+// 	}
+// }
 
-console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
+// console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
+
+// exemplo 2
+function quickCheck(arr, elem) {
+	return arr.indexOf(elem) >= 0? true:false;
+}
+console.log(quickCheck(["squash", "onions", "shallots"], "mushrooms"));
