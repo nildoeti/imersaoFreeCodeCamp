@@ -44,3 +44,38 @@ function greaterThanTen(arr) {
 
 console.log(greaterThanTen([2, 12]));
 
+/*
+	Desafio
+	Definimos uma função, filteredArray, a qual recebe arr, um array aninhado,
+	e elem como argumentos, e retornamos um novo array. elem representa um
+	elemento que pode ou não estar presente em um ou mais dos arrays aninhados
+	dentro de arr. Modifique a função, usando o laço for, para retornar uma
+	versão filtrada do array recebido mode que qualquer array aninhado dentro
+	de arr e contendo elem seja removido.
+*/
+function filteredArray(arr, elem) {
+	let newArr = [];
+	// change code below this line
+
+	for (let i = 0; i < arr.length; i++) {
+		if (arr[i].indexOf(elem) == -1) {
+			//Checks every parameter for the element and if is NOT there continues the code
+			newArr.push(arr[i]); //Inserts the element of the array in the new filtered array
+		}
+	}
+
+	// change code above this line
+	return newArr;
+}
+// change code here to test different cases:
+console.log(
+	filteredArray(
+		[
+			[3, 2, 3],
+			[1, 6, 3],
+			[3, 13, 26],
+			[19, 3, 9],
+		],
+		3
+	)
+);
