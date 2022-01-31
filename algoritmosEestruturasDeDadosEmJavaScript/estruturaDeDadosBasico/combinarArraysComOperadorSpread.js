@@ -38,3 +38,26 @@ console.log(thatArray);
 */
 
 
+/*
+	Concluindo...
+	Usando a sintaxe de spread, acabamos de conseguir uma operação que teria
+	sido mais complexa e mais extensa se tivéssemos utilizado métodos
+	tradicionais.
+*/
+
+
+/*
+	Desafio
+	Definimos uma função spreadOut que retorna a variável sentence. Modifique a
+	função usando o operador spread para que ele retorne o array
+	['learning', 'to', 'code', 'is', 'fun'].
+*/
+
+function spreadOut() {
+	let fragment = ['to', 'code'];
+	// let sentence; // Alterar esta linha
+	let sentence = ['learning', ...fragment, 'is, fun'];
+	return sentence;
+}
+
+console.log(spreadOut()); // [ 'learning', 'to', 'code', 'is, fun' ]
