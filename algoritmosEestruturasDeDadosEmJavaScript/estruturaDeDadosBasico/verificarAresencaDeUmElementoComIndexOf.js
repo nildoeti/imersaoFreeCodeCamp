@@ -28,3 +28,24 @@ let fruits = ['apples', 'pears', 'oranges', 'peaches', 'pears'];
 console.log(fruits.indexOf('dates')); // -1
 console.log(fruits.indexOf('oranges')); // 2
 console.log(fruits.indexOf('pears')); // 1
+
+
+/*
+	Desafio
+	indexOf() pode ser incrivelmente útil para verificar rapidamente a presença
+	de um elemento em um array. Definimos uma função, quickCheck, que recebe um
+	array e um elemento como argumentos. Modifique a função usando indexOf()
+	para que retorne true se o elemento passado existe no array, e false caso
+	não exista.
+*/
+
+// exemplo 1
+function quickCheck(arr, elem) {
+	if (arr.indexOf(elem) >= 0) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
