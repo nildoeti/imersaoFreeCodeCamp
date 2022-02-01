@@ -35,4 +35,6 @@ function checkInventory(scannedItem) {
   // Altere apenas o código acima desta linha
 }
 
-console.log(checkInventory("apples"));
+console.log(checkInventory("apples")); // 25
+console.log('plums'); // plums
+console.log(checkInventory('bananas')); // 13
