@@ -80,3 +80,33 @@ console.log(nestedArray[2][1][0][0][0]); // deepest-est?
 // redefinir o array
 nestedArray[2][1][0][0][0] = 'deeper still';
 console.log(nestedArray[2][1][0][0][0]);
+
+/*
+	Desafio
+
+	Definimos uma variável, myNestedArray, definida igual a um array. Modifique
+	myNestedArray, usando qualquer combinação de strings, numbers, e booleans
+	para elementos, para que tenha 5 níveis de profundidade (lembre-se: o array
+	mais extremo é de nível 1). Em algum lugar no terceiro nível, inclua a
+	string deep, no quarto nível, inclua a string deeper, e no quinto nível,
+	inclua a string deepest.
+*/
+
+let myNestedArray = [
+  // Altere apenas o código abaixo desta linha
+  // ['unshift', false, 1, 2, 3, 'complex', 'nested'],
+  // ['loop', 'shift', 6, 7, 1000, 'method'],
+  // ['concat', false, true, 'spread', 'array'],
+  // ['mutate', 1327.98, 'splice', 'slice', 'push'],
+  // ['iterate', 1.3849, 7, '8.4876', 'arbitrary', 'depth']
+  // Altere apenas o código acima desta linha
+
+
+  // solucao 1
+  ["unshift", false, 1, 2, 3, "complex", "nested"],
+  ["loop", "shift", 6, 7, 1000, "method"],
+  ["concat", false, true, "spread", "array", ["deep"]],
+  ["mutate", 1327.98, "splice", "slice", "push", [["deeper"]]],
+  ["iterate", 1.3849, 7, "8.4876", "arbitrary", "depth", [[["deepest"]]]]
+];
+
