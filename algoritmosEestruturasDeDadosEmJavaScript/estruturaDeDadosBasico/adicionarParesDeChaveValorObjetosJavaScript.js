@@ -61,3 +61,52 @@ const eyes = 'eye color';
 tekkenCharacter[eyes] = 'brown';
 
 console.log(tekkenCharacter)
+
+/*
+	Saida paraa tekkenCharacter:
+	{
+	  player: 'Hwoarang',
+	  fightingStyle: 'Tae Kwon Doe',
+	  human: true,
+	  origin: 'South Korea',
+	  'hair color': 'dyed orange',
+	  'eye color': 'brown'
+	}
+
+*/
+
+
+
+/*
+	Desafio
+	O objeto foods foi criado com três entradas. Usando a sintaxe de sua
+	escolha, adicione mais três entradas a ele: bananas com um valor de 13,
+	grapes com um valor de 35 e strawberries com um valor de 27.
+*/
+
+let foods = {
+  apples: 25,
+  oranges: 32,
+  plums: 28
+};
+
+// Altere apenas o código abaixo desta linha
+foods["bananas"] = 13;
+foods["grapes"] = 35;
+foods["strawberries"] = 27;
+// Altere apenas o código acima desta linha
+
+console.log(foods);
+
+/*
+	Saida para foods
+	{
+	  apples: 25,
+	  oranges: 32,
+	  plums: 28,
+	  bananas: 13,
+	  grapes: 35,
+	  strawberries: 27
+	}
+
+*/
