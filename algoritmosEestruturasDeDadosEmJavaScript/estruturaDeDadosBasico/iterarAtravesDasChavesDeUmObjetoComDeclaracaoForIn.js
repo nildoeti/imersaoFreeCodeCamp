@@ -25,6 +25,53 @@
 */
 
 // exemplo de interação for...in
-for (let user in user) {
-	console.log(user);
+// for (let user in user) {
+// 	console.log(user);
+// }
+
+/*
+
+	Nós definimos uma função countOnline a qual aceita um argumento (um objeto
+	users). Use a declaração for...in dentro dessa função para iterar o objeto
+	users passado para a função, e retorne o número de users o qual possuam a
+	propriedade online definida como true. Um exemplo de um objeto users o qual
+	pode ser passado para countOnline é mostrado abaixo. Cada usuário terá a
+	propriedade online com um valor true ou false.
+
+	{
+	  Alan: {
+	    online: false
+	  },
+	  Jeff: {
+	    online: true
+	  },
+	  Sarah: {
+	    online: false
+	  }
+	}
+
+*/
+
+const users = {
+	Alan: {
+		online: false
+	},
+	Jeff: {
+		online: true
+	},
+	Sarah: {
+		online: false
+	}
+};
+
+function countOnline(usersObj) {
+	let result = 0;
+	for (let user in usersObj) {
+		if (usersObj[user].online === true) {
+			result++;
+		}
+	}
+	return result;
 }
+
+console.log(countOnline(users));
