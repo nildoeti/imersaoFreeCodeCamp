@@ -34,16 +34,22 @@ let user = {
 };
 
 // solução 1
+// function isEvervoneHere(userObj) {
+// 	// saber se um objeto tem uma propriedade específi...
+// 	if (
+// 		user.hasOwnProperty('Alan') &&
+// 		user.hasOwnProperty('Jeff') &&
+// 		user.hasOwnProperty('Sarah')
+// 		) {
+// 		return true;
+// 	}
+// 	return false;
+// }
+
 function isEvervoneHere(userObj) {
-	// saber se um objeto tem uma propriedade específi...
-	if (
-		user.hasOwnProperty('Alan') &&
-		user.hasOwnProperty('Jeff') &&
-		user.hasOwnProperty('Sarah')
-		) {
-		return true;
-	}
-	return false;
+	return ['Alan', 'Jeff', 'Sarah'].every(name => userObj.hasOwnProperty(name));
 }
 
 console.log(isEvervoneHere(user)); // true
+
+// solução 2
