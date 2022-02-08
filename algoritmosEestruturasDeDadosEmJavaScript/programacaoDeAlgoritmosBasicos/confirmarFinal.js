@@ -10,11 +10,24 @@
 */
 
 // solução 1
+// function confirmEnding(str, target) {
+//   // "Never give up and good luck will find you."
+//   // -- Falcor
+//
+//   return str.slice(str.length - target.length) === target;
+// }
+//
+// confirmEnding("He has to give me a new name", "name");
+
+
+// solução 2
 function confirmEnding(str, target) {
   // "Never give up and good luck will find you."
   // -- Falcor
 
-  return str.slice(str.length - target.length) === target;
+  let re = new RegExp(target + "$", "i");
+
+  return re.test(str);
 }
 
-confirmEnding("He has to give me a new name", "name");
+console.log(confirmEnding("Bastian", "n"));
