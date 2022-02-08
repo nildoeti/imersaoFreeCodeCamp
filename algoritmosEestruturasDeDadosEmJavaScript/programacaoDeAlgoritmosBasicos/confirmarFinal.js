@@ -21,13 +21,22 @@
 
 
 // solução 2
+// function confirmEnding(str, target) {
+//   // "Never give up and good luck will find you."
+//   // -- Falcor
+//
+//   let re = new RegExp(target + "$", "i");
+//
+//   return re.test(str);
+// }
+//
+// console.log(confirmEnding("Bastian", "n"));
+
+
+
+// solução 3
 function confirmEnding(str, target) {
-  // "Never give up and good luck will find you."
-  // -- Falcor
-
-  let re = new RegExp(target + "$", "i");
-
-  return re.test(str);
+  return str.slice(-target.length) === target
 }
 
-console.log(confirmEnding("Bastian", "n"));
+confirmEnding("Bastian", "n");
