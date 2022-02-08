@@ -7,11 +7,17 @@
 */
 
 // solução 1
+// function truncateString(str, num) {
+//   // Clear out that junk in your trunk
+//   if (str.length > num) {
+//     return str.slice(0, num) + "...";
+//   } else {
+//     return str;
+//   }
+// }
+
+
+// solução 2
 function truncateString(str, num) {
-  // Clear out that junk in your trunk
-  if (str.length > num) {
-    return str.slice(0, num) + "...";
-  } else {
-    return str;
-  }
+  return str.length > num ? str.slice(0, num) + "..." : str;
 }
