@@ -24,10 +24,16 @@
 // }
 
 // solução 2
+// function largestOfFour(arr) {
+//     return arr.map(function(group) {
+//         return group.reduce(function(prev, current) {
+//             return current > prev ? current : prev;
+//         });
+//     });
+// }
+
+
+// solução 3
 function largestOfFour(arr) {
-    return arr.map(function(group) {
-        return group.reduce(function(prev, current) {
-            return current > prev ? current : prev;
-        });
-    });
+    return arr.map(Function.apply.bind(Math.max, null));
 }
