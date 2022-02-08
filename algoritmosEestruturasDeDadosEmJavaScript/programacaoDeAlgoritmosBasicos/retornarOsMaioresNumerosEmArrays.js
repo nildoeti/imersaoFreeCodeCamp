@@ -34,6 +34,13 @@
 
 
 // solução 3
-function largestOfFour(arr) {
-    return arr.map(Function.apply.bind(Math.max, null));
+// function largestOfFour(arr) {
+//     return arr.map(Function.apply.bind(Math.max, null));
+// }
+
+// solução 4
+function largestOfFour(arr, finalArr = []) {
+    return !arr.length
+    ? finalArr
+    : largestOfFour(arr.slice(1), finalArr.concat(Math.max(...arr[0])))
 }
