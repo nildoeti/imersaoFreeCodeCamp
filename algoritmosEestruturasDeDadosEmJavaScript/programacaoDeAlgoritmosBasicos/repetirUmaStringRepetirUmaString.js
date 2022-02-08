@@ -6,22 +6,28 @@
 */
 
 // SOLUÇÃO 1
-function repeatStringNumTimes(str, num) {
-    let accumulatedStr = "";
-
-    for (let i = 0; i < num; i++) {
-        accumulatedStr += str;
-    }
-
-    return accumulatedStr;
-}
+// function repeatStringNumTimes(str, num) {
+//     let accumulatedStr = "";
+//
+//     for (let i = 0; i < num; i++) {
+//         accumulatedStr += str;
+//     }
+//
+//     return accumulatedStr;
+// }
 
 
 // SOLUÇÃO 2
+// function repeatStringNumTimes(str, num) {
+//     if (num < 1) {
+//         return "";
+//     } else {
+//         return str + repeatStringNumTimes(str, num - 1);
+//     }
+// }
+
+
+// SOLUÇÃO 3
 function repeatStringNumTimes(str, num) {
-    if (num < 1) {
-        return "";
-    } else {
-        return str + repeatStringNumTimes(str, num - 1);
-    }
+  return num > 0 ? str + repeatStringNumTimes(str, num - 1) : '';
 }
