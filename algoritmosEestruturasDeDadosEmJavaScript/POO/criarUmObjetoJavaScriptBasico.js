@@ -32,3 +32,14 @@ let duck = {
     name: 'Aflac',
     numLegs: 2
 };
+
+/*
+    Desafio
+    Cria um objeto dog com as propriedades name e numLegs, e definem eles como
+    sendo do tipo string e numérico, respectivamente.
+*/
+
+let dog = {
+    name: 'Pluto',
+    numLegs: 2
+};
