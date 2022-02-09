@@ -27,3 +27,19 @@ let duck = {
         return 'The name is of this duck is ' + duck.name + '.';
     }
 }
+
+let duckSayName = duck.sayName();
+console.log(duckSayName); // The name is of this duck is Aflac.
+
+
+// exemplo 2, de como criar um método em javascript
+let pessoa = {
+    nome: 'Fulano',
+    sobreNome: 'de Tal',
+    nomeCompleto: function(){
+        return pessoa.nome + ' ' + pessoa.sobreNome;
+    }
+}
+
+let pessoaNomeCompleto = pessoa.nomeCompleto();
+console.log(pessoaNomeCompleto); // Fulano de Tal
