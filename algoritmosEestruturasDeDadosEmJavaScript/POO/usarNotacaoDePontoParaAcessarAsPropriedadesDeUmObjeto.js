@@ -23,4 +23,20 @@ let nameDuc = duck.name;
 let legsDuck = duck.numLegs;
 
 console.log(nameDuc); // Aflac
-console.log(legsDuck);
+console.log(legsDuck); // 2
+
+
+/*
+    Desafio
+    Exiba ambas as propriedades do objeto dog no seu console.
+*/
+let dog = {
+    name: 'Spot',
+    numLegs: 4
+};
+
+let nameDog = dog.name;
+let legsDog = dog.numLegs;
+
+console.log(nameDog); // Spot
+console.log(legsDog);
