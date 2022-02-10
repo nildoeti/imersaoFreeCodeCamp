@@ -41,3 +41,9 @@ function Bird() {
 let blueBird = new Bird(); // o operador new é usado para chamar o construtor e
                             // cria uma nova instância de Bird chamado blueBird
 console.log(blueBird); // Bird { name: 'Albert', color: 'blue', numLegs: 2 }
+
+// acessando e modificando as propriedades de um objeto
+blueBird.name = 'Elvira';
+blueBird.color = 'black';
+blueBird.numLegs = 4;
+console.log(blueBird); // Bird { name: 'Elvira', color: 'black', numLegs: 4 }
