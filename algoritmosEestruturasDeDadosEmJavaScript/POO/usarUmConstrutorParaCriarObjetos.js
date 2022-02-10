@@ -47,3 +47,17 @@ blueBird.name = 'Elvira';
 blueBird.color = 'black';
 blueBird.numLegs = 4;
 console.log(blueBird); // Bird { name: 'Elvira', color: 'black', numLegs: 4 }
+
+
+/*
+    Desafio
+    Utilize o construtor de Dog da última lição para criar uma nova instância
+    de Dog, atribuindo a instância para a variável hound.
+*/
+
+function Dog() {
+    this.name = 'Rupert';
+    this.color = 'brown';
+    this.numLegs = 4;
+}
+let hound = new Dog(); // nova instância criada para Dog()
