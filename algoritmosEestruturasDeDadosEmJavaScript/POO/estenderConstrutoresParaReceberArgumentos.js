@@ -43,17 +43,24 @@
 */
 
 // função construtora do desafio anterior
-function Bird() {
-    this.name = 'Albeart';
-    this.color = 'blue';
-    this.numLegs = 2;
-}
+// function Bird() {
+//     this.name = 'Albeart';
+//     this.color = 'blue';
+//     this.numLegs = 2;
+// }
 // acessando/modificando nossa função construtora Bird
-let blueBird = new Bird();
-console.log('Antes: ', blueBird); // Antes:  Bird { name: 'Albeart', color: 'blue', numLegs: 2 }
+// let blueBird = new Bird();
+// console.log('Antes: ', blueBird); // Antes:  Bird { name: 'Albeart', color: 'blue', numLegs: 2 }
 
 // Modificando as propriedades da função construtora
-blueBird.name = 'Poll';
-blueBird.color = 'black';
-blueBird.numLegs = '4';
-console.log(blueBird); // Bird { name: 'Poll', color: 'black', numLegs: '4' }
+// blueBird.name = 'Poll';
+// blueBird.color = 'black';
+// blueBird.numLegs = '4';
+// console.log(blueBird); // Bird { name: 'Poll', color: 'black', numLegs: '4' }
+
+// projetar o construtor de Bird para aceitar parâmetros, a partir de parâmetros
+function Bird(name, color) {
+    this.name = name;
+    this.color = color;
+    this.numLegs = 2;
+}
