@@ -33,3 +33,12 @@ function Bird() {
     this.color = 'blue';
     this.numLegs = 2;
 }
+
+// Definido nova função construtora
+function Paises() {
+    this.America = 'Brasil';
+    this.Europa = 'Inglaterra';
+    this.Asia = 'China';
+    this.OrienteMedio = 'Egito';
+    this.Africano = 'Africa';
+}
