@@ -58,9 +58,17 @@
 // blueBird.numLegs = '4';
 // console.log(blueBird); // Bird { name: 'Poll', color: 'black', numLegs: '4' }
 
-// projetar o construtor de Bird para aceitar parâmetros, a partir de parâmetros
+// projetar o construtor de Bird para aceitar parâmetros
 function Bird(name, color) {
     this.name = name;
     this.color = color;
     this.numLegs = 2;
 }
+// passando os valores como argumentos para a definição de cada pássaro
+let cardinal1 = new Bird('Bruce', 'red');
+let cardinal2 = new Bird('Poll', 'black');
+let cardinal3 = new Bird('Tesla', 'green');
+
+console.log(cardinal1); // Bird { name: 'Bruce', color: 'red', numLegs: 2 }
+console.log(cardinal2); // Bird { name: 'Poll', color: 'black', numLegs: 2 }
+console.log(cardinal3); // Bird { name: 'Tesla', color: 'green', numLegs: 2 }
