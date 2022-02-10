@@ -72,3 +72,21 @@ let cardinal3 = new Bird('Tesla', 'green');
 console.log(cardinal1); // Bird { name: 'Bruce', color: 'red', numLegs: 2 }
 console.log(cardinal2); // Bird { name: 'Poll', color: 'black', numLegs: 2 }
 console.log(cardinal3); // Bird { name: 'Tesla', color: 'green', numLegs: 2 }
+
+
+/*
+    Desafio
+    Crie outro construtor Dog. Desta vez, defina o construtor para receber os
+    parâmetros name e color, e que tenham a propriedade numLegs fixada em 4. Em
+    seguida, crie um novo Dog salvo na variável terrier. Passe duas strings
+    como argumentos para as propriedades name e color.
+*/
+function Dog(nome, color) {
+    this.name = nome;
+    this.color = color;
+    this.numLegs = 4;
+};
+
+let terrier = new Dog('Poll', 'black');
+console.log(terrier); // Dog { name: 'Poll', color: 'black', numLegs: 4 }
+
