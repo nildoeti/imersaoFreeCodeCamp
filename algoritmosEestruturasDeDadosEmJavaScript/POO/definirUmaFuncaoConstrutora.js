@@ -42,3 +42,15 @@ function Paises() {
     this.OrienteMedio = 'Egito';
     this.Africano = 'Africa';
 }
+
+/*
+    Desafio
+    Crie um construtor, Dog, com as propriedades name, color e numLegs que são
+    definidos como string, string e número, respectivamente.
+*/
+
+function Dog() {
+    this.name = 'Spot';
+    this.color = 'black';
+    this.numLegs = 4;
+}
