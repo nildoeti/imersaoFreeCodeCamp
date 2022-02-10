@@ -41,3 +41,19 @@ let duck = {
 
 let duckResult = duck.sayName();
 console.log(duckResult);
+
+
+/*
+    Modifique o método dog.sayLegs para remover qualquer referencia para dog.
+    Utilize o exemplo duck como guia.
+*/
+let dog = {
+    name: 'Spot',
+    numLegs: 4,
+    sayLegs: function() {
+        return 'This dog has ' + this.numLegs + 'legs';
+    }
+};
+
+let dogNumLegs = dog.sayLegs();
+console.log(dogNumLegs); // This dog has 4legs
