@@ -73,6 +73,24 @@ console.log(cardinal1); // Bird { name: 'Bruce', color: 'red', numLegs: 2 }
 console.log(cardinal2); // Bird { name: 'Poll', color: 'black', numLegs: 2 }
 console.log(cardinal3); // Bird { name: 'Tesla', color: 'green', numLegs: 2 }
 
+// Definido nova função construtora
+function Paises (
+    Africa,
+    AmericaSul,
+    Asia,
+    Europa,
+    OrienteMedio
+) {
+    this.Africa = Africa;
+    this.AmericaSul = AmericaSul;
+    this.Asia = Asia;
+    this.Europa = Europa;
+    this.OrienteMedio = OrienteMedio;
+}
+
+const v1 = new Paises('Africa do Sul', 'Brasil', 'China', 'Alemanha', 'Egito');
+console.log(v1);
+
 
 /*
     Desafio
@@ -87,6 +105,10 @@ function Dog(nome, color) {
     this.numLegs = 4;
 };
 
-let terrier = new Dog('Poll', 'black');
-console.log(terrier); // Dog { name: 'Poll', color: 'black', numLegs: 4 }
+let terrier1 = new Dog('Poll', 'black');
+let terrier2 = new Dog('Rex', 'white');
+let terrier3 = new Dog('Bolinha', 'Yellow')
 
+console.log(terrier1); // Dog { name: 'Poll', color: 'black', numLegs: 4 }
+console.log(terrier2); // Dog { name: 'Rex', color: 'white', numLegs: 4 }
+console.log(terrier3); //Dog { name: 'Bolinha', color: 'Yellow', numLegs: 4 }
