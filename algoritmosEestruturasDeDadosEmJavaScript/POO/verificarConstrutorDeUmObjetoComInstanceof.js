@@ -45,3 +45,6 @@ let crow = new Bird('Alexis', 'black');
 crow instanceof Bird;
 
 console.log(crow); // Bird { name: 'Alexis', color: 'black', numLegs: 2 }
+
+
+console.log(crow instanceof Bird); // true
