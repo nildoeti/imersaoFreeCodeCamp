@@ -50,7 +50,7 @@ console.log(crow); // Bird { name: 'Alexis', color: 'black', numLegs: 2 }
 console.log(crow instanceof Bird); // true
 
 
-// testando um objeto construido sem um constructor
+// testando um objeto construido sem um construct
 
 let canary = {
 	name: 'Mildered',
@@ -58,4 +58,22 @@ let canary = {
 	numLegs: 2
 }
 
-console.log(canary instanceof Bird); 
+console.log(canary instanceof Bird); // false
+
+
+/*
+	Crie uma nova instância do construtor House, atribuindo à variável myHouse
+	e passe o número de quartos. Então, utilize instanceof para verificar que é
+	uma instância de House.
+*/
+
+function House (numBedrooms) {
+	this.numBedrooms = numBedrooms;
+}
+
+let myHouse = new House();
+myHouse instanceof House;
+
+console.log(myHouse);  // House { numBedrooms: undefined }
+console.log(myHouse instanceof House);
+
