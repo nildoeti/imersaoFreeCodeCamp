@@ -48,3 +48,14 @@ console.log(crow); // Bird { name: 'Alexis', color: 'black', numLegs: 2 }
 
 
 console.log(crow instanceof Bird); // true
+
+
+// testando um objeto construido sem um constructor
+
+let canary = {
+	name: 'Mildered',
+	color: 'Yellow',
+	numLegs: 2
+}
+
+console.log(canary instanceof Bird); 
