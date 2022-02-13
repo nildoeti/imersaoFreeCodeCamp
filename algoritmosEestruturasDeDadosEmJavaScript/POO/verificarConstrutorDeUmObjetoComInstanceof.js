@@ -75,5 +75,5 @@ let myHouse = new House();
 myHouse instanceof House;
 
 console.log(myHouse);  // House { numBedrooms: undefined }
-console.log(myHouse instanceof House);
+console.log(myHouse instanceof House); // true
 
