@@ -36,6 +36,7 @@
 
 */
 
+// exemplos para own property e prototype property
 function Bird (name) {
 	this.name = name; // own property
 }
@@ -45,3 +46,22 @@ Bird.prototype.numLegs = 2; // prototype property
 let duck = new Bird('Donald');
 
 console.log(duck);
+
+
+
+// adiciona own properties duck para o array ownProps e propriedades 
+// prototype para o array prototypeProps
+
+let ownProps = [];
+let prototypeProps = [];
+
+for (let property in duck) {
+	if (duck.hasOwnProperty(property)) {
+		ownProps.push(duck)
+	} else {
+		prototypeProps.push(property);
+	}
+}
+
+console.log(ownProps);
+console.log(prototypeProps);
