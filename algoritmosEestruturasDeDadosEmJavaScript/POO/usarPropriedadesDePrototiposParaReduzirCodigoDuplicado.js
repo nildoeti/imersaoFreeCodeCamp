@@ -40,3 +40,19 @@ let oldDuck = new Bird('Yellow');
 console.log(duck.numLegs); // 4
 console.log(oldDuck.numLegs); // 4
 
+/*
+	Desafio
+	Adicione a propriedade numLegs para o prototype de Dog
+*/
+
+function Dog (name) {
+	this.name = name;
+}
+
+Dog.prototype.numLegs = 4;
+
+let beagle = new Dog('Snoopy');
+
+console.log(beagle); // Dog { name: 'Snoopy' }
+
+
