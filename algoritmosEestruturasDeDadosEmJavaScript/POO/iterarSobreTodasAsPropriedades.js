@@ -1,0 +1,1 @@
+iterarSobreTodasAsPropriedades.js
