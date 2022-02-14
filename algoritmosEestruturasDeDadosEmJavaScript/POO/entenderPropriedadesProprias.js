@@ -33,23 +33,47 @@
 
 */
 
-function Bird (name) {
+// function Bird (name) {
+// 	this.name = name;
+// 	let numLegs = 2;
+// }
+
+// let duck = new Bird('Donald');
+// let canary = new Bird('Tweety');
+
+// console.log(duck); // Bird { name: 'Donald' }
+// console.log(canary); // Bird { name: 'Tweety' }
+
+
+// let ownProps = [];
+// for (let property in duck) {
+// 	if (duck.hasOwnProperty(property)) { // hasOwnProperty retorna um boolean
+// 											// no objeto especificado
+// 		ownProps.push(duck);
+// 	}
+// }
+
+// console.log(ownProps);
+
+
+/*
+ * Desafio
+ *
+ * Adicione as propriedades próprias do canary para o array ownProps.
+*/
+
+function Bird(name) {
+	// body...
 	this.name = name;
-	let numLegs = 2;
+	this.numLegs = 2;
 }
 
-let duck = new Bird('Donald');
 let canary = new Bird('Tweety');
-
-console.log(duck); // Bird { name: 'Donald' }
-console.log(canary); // Bird { name: 'Tweety' }
-
-
 let ownProps = [];
-for (let property in duck) {
-	if (duck.hasOwnProperty(property)) { // hasOwnProperty retorna um boolean
-											// no objeto especificado
-		ownProps.push(duck);
+
+for (let property in canary) {
+	if (canary.hasOwnProperty(property)) {
+		ownProps.push(canary);
 	}
 }
 
