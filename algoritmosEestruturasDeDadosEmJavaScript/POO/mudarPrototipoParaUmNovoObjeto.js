@@ -63,16 +63,28 @@ function Dog (name) {
     this.name = name;
 }
 
-let dogOne = new Dog('Pateta');
+// let dogOne = new Dog('Pateta');
 
+// Dog.prototype = {
+//     numLegs: 4,
+//     eat: function () {
+//         console.log('Alguma coisa');
+//     },
+//     describe: function () {
+//         console.log('My name is: ' + this.name);
+//     }
+// }
+
+// console.log(dogOne); // { name: 'Pateta' }
+
+
+// solução dois
 Dog.prototype = {
     numLegs: 4,
-    eat: function () {
-        console.log('Alguma coisa');
+    eat: () {
+        console.log('alguma coisa');
     },
-    describe: function () {
-        console.log('This name is: ' + this.name);
+    describe: () {
+        console.log('My name is ' + this.name);
     }
 }
-
-console.log(dogOne); // { name: 'Pateta' }
