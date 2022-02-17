@@ -43,7 +43,7 @@ function Bird (name) {
 
 Bird.prototype.numLegs = 2; // prototype property
 
-let duck = new Bird('Donald'); Bird { name: 'Donald' }
+let duck = new Bird('Donald');
 
 console.log(duck);
 
@@ -65,4 +65,35 @@ for (let property in duck) {
 
 console.log(ownProps); // [ 'name' ]
 console.log(prototypeProps); // [ 'numLegs' ]
+
+
+/*
+	Desafio
+
+	Adicione todas as propriedades próprias de beagle para o array ownProps.
+	Adicione todas as propriedades prototype de Dog para o array prototypeProps.
+*/
+
+function Dog (name) {
+	this.name = name;
+}
+
+Dog.prototype.numLegs = 4; // own property
+let beagle = new Dog('Snoopy'); // new stancy of Dog
+
+let ownProps2 = [];
+let prototypeProps2 = [];
+
+for (let property in beagle) {
+	if (Dog.hasOwnProperty(property)) {
+		ownProps2.push(property);
+	} else {
+		prototypeProps2.push(property);
+	}
+}
+
+
+console.log(ownProps2); // [ 'name' ]
+
+console.log(prototypeProps2); // [ 'numLegs' ]
 
