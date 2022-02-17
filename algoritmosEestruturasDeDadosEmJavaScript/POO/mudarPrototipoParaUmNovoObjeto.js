@@ -1,0 +1,1 @@
+mudarPrototipoParaUmNovoObjeto.js
