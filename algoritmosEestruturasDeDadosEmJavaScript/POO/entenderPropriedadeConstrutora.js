@@ -32,24 +32,46 @@
 */
 
 // exemplo 1
-function Bird(name) {
-	this.name = name;
-}
+// function Bird(name) {
+// 	this.name = name;
+// }
 
-Bird.prototype.numLegs = 2; // own property
+// Bird.prototype.numLegs = 2; // own property
 
 // criar nova instancia
-let duck = new Bird('Donald');
+// let duck = new Bird('Donald');
 
 // console.log(duck.constructor === Bird); // true
 
 
 // verificar essa propriedade para descobrir qual o tipo do objeto}
-function joinBirdFraternity (candidate) {
-	if (candidate.constructor === Bird) {
-		return true;
-	} else {
-		return false;
-	}
+// function joinBirdFraternity (candidate) {
+// 	if (candidate.constructor === Bird) {
+// 		return true;
+// 	} else {
+// 		return false;
+// 	}
+// }
+
+
+/*
+Escreva a função joinDogFraternity que recebe o parâmetro candidate e,
+utilizando a propriedade constructor, retorne true se o candidato é um Dog, e
+caso não seja, retorne false.
+*/
+
+function Dog (name) {
+	this.name = name;
 }
 
+let beagle = new Dog('Donald');
+console.log(beagle);
+console.log(Dog.constructor === 'Donald'); // referência á função construtora
+
+function joinDogFraternity(candidate) {
+	// retorna false
+	if (candidate.constructor === Dog) {
+		return true;
+	} else {}
+		return false;
+}
