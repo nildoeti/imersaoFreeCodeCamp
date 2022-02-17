@@ -53,3 +53,26 @@ Bird.prototype = {
 console.log(b1); // { name: 'Donald' }
 
 
+/*
+    Desafio
+    Adiciona a propriedade numLegs e os dois métodos eat() e describe() para o
+    prototype de Dog definindo o prototype para um novo objeto.
+*/
+
+function Dog (name) {
+    this.name = name;
+}
+
+let dogOne = new Dog('Pateta');
+
+Dog.prototype = {
+    numLegs: 4,
+    eat: function () {
+        console.log('Alguma coisa');
+    },
+    describe: function () {
+        console.log('This name is: ' + this.name);
+    }
+}
+
+console.log(dogOne); // { name: 'Pateta' }
