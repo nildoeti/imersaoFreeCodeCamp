@@ -31,7 +31,7 @@
 
 function Bird (name) {
 	this.name = name;
-} 
+}
 
 let birdOne = new Bird('Donald');
 
