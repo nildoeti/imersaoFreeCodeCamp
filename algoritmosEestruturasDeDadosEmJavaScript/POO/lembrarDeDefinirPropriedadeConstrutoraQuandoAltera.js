@@ -53,3 +53,29 @@ console.log(birdOne.constructor === Object); // false
 console.log(birdOne instanceof Bird); // false
 console.log(Bird instanceof Bird); // false
 
+
+/*
+	Desafio
+	Define a propriedade constructor no prototype de Dog.
+*/
+
+function Dog(name) {
+	this.name = name;
+}
+
+let dogOne = new Dog('Pateta');
+
+
+Dog.prototype = {
+	constructor: Dog,
+	numLegs: 4,
+	eat: function() {
+		console.log('it is a descrition');
+	},
+	drescribe: function() {
+		console.log('My name is ' + this.name);
+	}
+}
+console.log(dogOne); // { name: 'Pateta' }
+console.log(Dog.constructor === Dog); // false
+console.log(dogOne.constructor === Object); // false
