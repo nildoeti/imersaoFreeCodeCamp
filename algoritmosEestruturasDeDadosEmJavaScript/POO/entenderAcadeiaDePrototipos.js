@@ -32,10 +32,11 @@
 
 */
 
-function Bird (name) {
-    this.name = name;
+// exemplo prático para cadeia de protótipo
+function Bird(name) {
+    this.name = name; // own prototype
 }
 
-console.log(typeof(Bird.prototype)); // Object
-console.log(Object.prototype.isPrototypeOf(Bird.Object)); // false
-
+console.log(typeof(Bird)); // function
+console.log(typeof(Bird.prototype)); // object
+console.log(Object.prototype.isPrototypeOf(Bird.prototype)); // true
