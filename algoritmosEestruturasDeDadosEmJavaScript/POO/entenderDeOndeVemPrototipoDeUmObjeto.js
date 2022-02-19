@@ -27,10 +27,27 @@ function Bird(name) {
 }
 
 // duck herda seu prototype da função construtora de Bird.
-let duck = new Bird('Donald'); 
+let duck = new Bird('Donald'); // duck é um objeto do constructor de Bird
 
 console.log(duck); // Bird { name: 'Donald' }
 console.log('My name is ' + duck.name); // Donald
 
 let prototypeDuck = Bird.prototype.isPrototypeOf(duck);
 console.log(prototypeDuck); // true
+
+
+
+
+/*
+    Desafio
+    Utilize isPrototypeOf para verificar o prototype de beagle.
+*/
+
+function Dog (name) {
+    this.name = name;
+}
+
+let beagle = new Dog('Snoopy');
+
+let dog1 = Dog.prototype.isPrototypeOf('beagle');
+console.log(dog1); // false
