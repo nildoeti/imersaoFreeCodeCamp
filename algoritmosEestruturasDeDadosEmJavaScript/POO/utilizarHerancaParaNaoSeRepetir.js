@@ -67,21 +67,79 @@
     // };
 
 
-function Animal() {}
+// function Animal() {}
 
-Animal.prototype = {
-    constructor: Animal,
-    // método describe
-    describe: function() {
-        console.log('My name is ' + this.name);
-    }
+// Animal.prototype = {
+//     constructor: Animal,
+//     // método describe
+//     describe: function() {
+//         console.log('My name is ' + this.name);
+//     }
+// };
+
+// Bird.prototype = {
+//     constructor: Bird;
+// }
+
+// Dog.prototype = {
+//     constructor: Dog;
+// }
+
+
+/*
+    Desafio
+    O método eat é repetido em Cat e Bear. Edite o código no espírito do
+    princípio DRY ao mover o método eat do supertype de Animal.
+*/ 
+
+// function Cat(name) { // função construtora
+//     this.name = name;
+// }
+
+// Cat.prototype = {
+//     constructor: Cat,
+//     // método eat compartilhado
+//     eat: function() {
+//         console.log('bla bla bla');
+//     }
+// };
+
+// function Bear(name) {
+//     constructor: Bear,
+//     // método eat compartilhado
+//     eat: function() {
+//         console.log('bla bla bla');
+//     }
+// };
+
+// function Animal() {} // função construtora animal
+// Animal.prototype = {
+//     constructor: Animal,
+// }
+
+
+// resposta ao desafio
+function Cat(name) {
+    this.name = name;
+}
+
+Cat.prototype = {
+    constructor: Cat
 };
 
-Bird.prototype = {
-    constructor: Bird;
-}
 
-Dog.prototype = {
-    constructor: Dog;
+function Bear(name) {
+    this.name;
 }
+Bear.prototype = {
+    constructor: Bear
+};
 
+
+function Animal() {}
+Animal.prototype = {
+    constructor: Animal,
+    eat: function() {
+        console.log('bla bla bla');
+    }
+}
