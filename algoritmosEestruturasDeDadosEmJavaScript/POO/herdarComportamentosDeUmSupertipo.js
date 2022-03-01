@@ -36,19 +36,39 @@
 */
 
 // super type Animal
-function Animal () {
-    Animal.prototype.eat = function () {
-        console.log('Alguma coisa');
-    }
-}
+// function Animal () {
+//     Animal.prototype.eat = function () {
+//         console.log('Alguma coisa');
+//     }
+// }
 
 // novainstância para Animal no modelo abaixo torna complea sua manutenção
 // let animal = new Animal();
 
 // abordagem alternativa para a criação de uma nova instância do objeto
-let animal = Object.create(Animal.prototype);
+// let animal = Object.create(Animal.prototype);
 
-animal.eat;
-let newStance = animal instanceof Animal;
-console.log(newStance);
+// animal.eat;
+// let newStance = animal instanceof Animal;
+// console.log(newStance);
 
+
+/**
+ *Desafio
+ * Utilize Object.create para fazer duas instâncias de Animal nomeados duck e
+ * beagle.
+ */
+
+function Animal() {}
+Animal.prototype = {
+    constructor: Animal,
+    eat: function () {
+        console.log('alguma coisa');
+    }
+};
+
+// Altere apenas o código abaixo desta linha
+// let duck;
+// let beagle;
+let duck = Object.create(Animal.prototype);
+let beagle = Object.create(Animal.prototype);
