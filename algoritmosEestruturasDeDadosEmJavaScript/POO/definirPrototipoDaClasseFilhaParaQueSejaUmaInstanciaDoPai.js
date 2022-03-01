@@ -34,6 +34,5 @@ function Dog() {}
 Dog.prototype = Object.create(Animal.prototype);
 
 let beagle = new Dog();
-let result = beagle.eat();
 
 beagle.eat(); // alguma coisa
