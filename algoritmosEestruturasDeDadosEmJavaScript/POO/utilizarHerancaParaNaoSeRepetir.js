@@ -48,27 +48,40 @@
     };
  */
 
-    // exemplo prático para DRY, código repetido
-    function Bird(name) {
-        this.name = name;
-    }
+    // método describe repetido em dois lugares
+    // Bird.prototype = {
+    //     constructor: Bird,
 
-    function Dog(name) {
-        this.name = name;
-    }
+    //     // método compartilhado
+    //     describe: function() {
+    //         console.log('My name is ' + this.name);
+    //     }
+    // };
 
-    Bird.prototype = {
-        constructor: Bird,
-        describe: function() {
-            console.log('My name is ' + this.name);
-        }
-    };
+    // Dog.prototype = {
+    //     constructor: Dog,
+    //     // método compartilhado
+    //     describe: function() {
+    //         console.log('My name is ' + this.name);
+    //     } 
+    // };
 
-    Dog.prototype = {
-        constructor: Dog,
-        describe: function() {
-            console.log('This name is ' + this.name);
-        }
+
+function Animal() {}
+
+Animal.prototype = {
+    constructor: Animal,
+    // método describe
+    describe: function() {
+        console.log('My name is ' + this.name);
     }
-    
+};
+
+Bird.prototype = {
+    constructor: Bird;
+}
+
+Dog.prototype = {
+    constructor: Dog;
+}
 
