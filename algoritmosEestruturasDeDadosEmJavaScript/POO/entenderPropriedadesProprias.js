@@ -78,3 +78,4 @@ for (let property in canary) {
 }
 
 console.log(ownProps);
+
