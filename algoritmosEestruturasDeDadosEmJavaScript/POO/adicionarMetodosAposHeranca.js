@@ -35,10 +35,10 @@
 
 */
 
-function Animal () {} // função consstrutora
-Animal.prototype.eat = function () { // função construtora de supertupo
+// function Animal () {} // função construtora
+Animal.prototype.eat = function () { // função construtora de supertipo
     console.log('non non non');
-}
+};
 
 // Bird é um construtor que herda seu prototype de Animal
 function Bird () {} // função construtora
@@ -48,9 +48,30 @@ Bird.prototype.constructor = Bird();
 // adicionar o comportamento que é único de objetos Bird.
 Bird.prototype.fly = function () {
     console.log('I am flying');
-}
+};
 
 //  instâncias de Bird terão ambos os métodos
 let duck = new Bird();
 duck.eat();
 duck.fly();
+
+
+/*
+    Desafio
+    Adiciona todos os códigos necessários para que o objeto Dog herde de Animal
+    e o prototype de construtor de Dog está definido para Dog. Então adiciona o
+    método bark() para o objeto Dog para que um beagle possa eat() e bark(). O
+    método bark() deveria imprimir no console a string: Woof!.
+*/
+
+function Dog () {}
+Dog.prototype = Object.create(Animation.prototype);
+Dog.prototype.constructor = Dog;
+Dog.prototype.bark = function () {
+    console.log('Woof!');
+}
+
+let beagle = new Dog();
+
+beagle.eat = Dog();
+beagle.fly = Dog();
