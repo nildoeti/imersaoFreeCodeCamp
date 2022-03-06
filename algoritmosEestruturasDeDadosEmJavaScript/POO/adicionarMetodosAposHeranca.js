@@ -35,7 +35,7 @@
 
 */
 
-// function Animal () {} // função construtora
+function Animal () {} // função construtora
 Animal.prototype.eat = function () { // função construtora de supertipo
     console.log('non non non');
 };
