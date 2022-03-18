@@ -42,15 +42,33 @@
 */
 
 // exemplo de Bird sobrescrevendo o método eat() herdado de Animal
-function Animal () {} // função construtora Animal
-Animal.prototype.eat = function() { // prototipo de super tipo
-	return 'non non non';
-};
+// function Animal () {} // função construtora Animal
+// Animal.prototype.eat = function() { // prototipo de super tipo
+// 	return 'non non non';
+// };
 
 
-function Bird () {}
+// function Bird () {}
 
-Bird.prototype.eat = function () {
-	return 'peck peck peck';
-}
+// Bird.prototype.eat = function () {
+// 	return 'peck peck peck';
+// };
 
+/*
+	Desafio
+	Sobrescreva o método fly() para Penguin para que retorne a string Alas,
+	this is a flightless bird. (Infelizmente, este pássaro não voa.)
+*/
+
+function Bird () {} // função construtora Bird
+Bird.prototype.fly = function () { return 'I am flying'; };
+
+function Penguin () {}
+Penguin.prototype = Object.create(Bird.prototype);
+Penguin.prototype.constructor = Penguin;
+
+// solução
+Penguin.prototype.fly = function () { return 'Alas, this is a flightless bird.'}
+
+let peguin = new Penguin();
+console.log(peguin.fly());
