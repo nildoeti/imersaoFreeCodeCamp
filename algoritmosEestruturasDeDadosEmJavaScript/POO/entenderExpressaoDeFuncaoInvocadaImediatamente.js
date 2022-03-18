@@ -20,4 +20,20 @@
 
 (function() {
     console.log('Chirp, chirp');
+})(); // expressão de função invocada imediatamente) ou IIFE
+
+
+/*
+    Desafio
+    Rescreva a função makeNest e remova a chamada a ela para que no lugar seja
+    uma expressão de função imediatamente invocada (IIFE) anônima.
+*/
+
+// function makeNest() {
+//     console.log('A cozy nest is read');
+// }
+
+// makeNest();
+(function(){
+    console.log('A cozy nest is read');
 })();
