@@ -46,28 +46,60 @@
 
 */
 
-let flyMixin = function(obj) {
-    obj.fly = function() {
-        console.log('Flying, woosh!');
-    };
-};
+// let flyMixin = function(obj) {
+//     obj.fly = function() {
+//         console.log('Flying, woosh!');
+//     };
+// };
 
 // O flyMixin recebe qualquer objeto e da a ele o método fly.
+
+// let bird = {
+//     name: 'Donald',
+//     numLegs: 2
+// };
+
+
+// let plane = {
+//     model: '777',
+//     numPassengers: 524
+// };
+
+// flyMixin(bird);
+// flyMixin(plane);
+
+
+// bird.fly(); // Flying, woosh!
+// plane.fly(); // Flying, woosh!
+
+
+/*
+    Desafios
+    Crie um mixin chamado glideMixin que define o método chamado glide. Em 
+    seguida, use glideMixin para dar ambos bird e boat a habilidade de deslizar
+    (glide).
+*/
+
 
 let bird = {
     name: 'Donald',
     numLegs: 2
 };
 
-
-let plane = {
-    model: '777',
-    numPassengers: 524
+let boat = {
+    name: 'Warrior',
+    type: 'race-boat'
 };
 
-flyMixin(bird);
-flyMixin(plane);
+// Add your code below this line
+let glideMixin = function(obj) {
+    obj.glide = function() {
+        console.log('Gliding');
+    };
+};
 
+glideMixin(bird);
+glideMixin(boat);
 
-bird.fly(); // Flying, woosh!
-plane.fly(); // Flying, woosh!
+bird.glide(); // Gliding
+boat.glide(); // Gliding
