@@ -58,10 +58,19 @@
 */
 
 // exemplo 1
-function Bird() {
-    this.weight = 15;
+// function Bird() {
+//     let weight = 15;
 
-    this.getWeight = function() {
-        return weight;
-    }
+//     this.getWeight = function() {
+//         return weight;
+//     };
+}
+
+// exemplo 2
+function Bird() {
+  let weight = 15;
+
+  this.getWeight = function() {
+    return weight;
+  };
 }
