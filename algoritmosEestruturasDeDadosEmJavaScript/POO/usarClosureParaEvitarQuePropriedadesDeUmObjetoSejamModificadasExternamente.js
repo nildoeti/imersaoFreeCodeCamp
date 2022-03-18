@@ -36,13 +36,32 @@
 
 */
 
+// function Bird() {
+//     let hatchedEgg = 10;
+// }
+
+// this.getHatchedEggCount = function () {
+//     return hatchedEgg;
+// };
+
+// let duck = new Bird();
+// duck.getHatchedEggCount();
+
+
+/*
+
+    Desafio
+    Modifique como weight é declarado na função Bird para que seja uma variável
+    privada. Em seguida, crie o método getWeight que retorna o valor de weight 
+    15.
+
+*/
+
+// exemplo 1
 function Bird() {
-    let hatchedEgg = 10;
+    this.weight = 15;
+
+    this.getWeight = function() {
+        return weight;
+    }
 }
-
-this.getHatchedEggCount = function () {
-    return hatchedEgg;
-};
-
-let duck = new Bird();
-duck.getHatchedEggCount();
