@@ -98,19 +98,22 @@ let singMixin = function(obj) {
 };
 
 
-// solução
-let funModule = (function() {
-    return {
-        isCuteMixin: function(obj) {
-            obj.isCute = function() {
-                return true;
-            };
-        },
-        singMixin: function(obj) {
-            obj.sing = function(obj) {
-                console.log('Singing to an awesome tune');
-            };
-        }
+// solução 1
+// let funModule = (function() {
+//     return {
+//         isCuteMixin: function(obj) {
+//             obj.isCute = function() {
+//                 return true;
+//             };
+//         },
+//         singMixin: function(obj) {
+//             obj.sing = function(obj) {
+//                 console.log('Singing to an awesome tune');
+//             };
+//         }
         
-    };
-})();
+//     };
+// })();
+
+
+// solução 1
